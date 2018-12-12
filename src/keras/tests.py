@@ -4,6 +4,7 @@ import pandas as pd
 import time
 import os
 import numpy as np
+import seaborn as sns
 
 fig = plt.figure(figsize=(10,10))
 ax = fig.gca()
@@ -47,17 +48,22 @@ def plot():
         plt.title("Litecoin/BTC")
         ax.set_xlim(len(bid)/10, len(bid)+(len(bid)/4)+5)
         ax.plot(bid, label = "Bid - Venda LTC {}".format(np.around(float(bid[-1:]),8)), color = 'blue', alpha = 0.5)
-        #ax.plot(ask, label = "Ask - Compra LTC "+ str(np.around(float(ask[-1:]),8)), color = 'red', alpha = 0.5)
+        ax.plot(ask, label = "Ask - Compra LTC "+ str(np.around(float(ask[-1:]),8)), color = 'red', alpha = 0.5)
         
-        bband = bbands(bid, 30, 2)
-        ax.plot(bband['mean'], "--", color = "gray", label='SMA')
-        ax.plot(bband['upperBand'], "--", color = "green", label='upperBand')
-        ax.plot(bband['lowerBand'], "--", color = "green", label='lowerBand')
+        bband = bbands(bid, 30, 1)
+        if len(bid) > 30:
+            ax.plot(bband['mean'], "--", color = "gray", label='SMA')
+            ax.plot(bband['upperBand'], "--", color = "green", label='upperBand')
+            ax.plot(bband['lowerBand'], "--", color = "green", label='lowerBand')
         plt.legend()
         plt.pause(2)
 
 while True:
-    getTickers()
+    try:
+        getTickers()
+    except Exception as err: 
+        print (err)
+
     plot()
  
 
