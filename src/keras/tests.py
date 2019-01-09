@@ -47,7 +47,7 @@ class strategies():
         return (self.ask[-1:] - self.bid[-1:]) / ( self.ask[-1:] / 100)
 
     def rsi():
-        return
+        pass
 
     def bbands(self):
         mean = self.bid.rolling( window=self.window).mean()
@@ -79,8 +79,7 @@ class strategies():
                 signal = 2
             else:
                 sinal = 0
-                sinal_action = 0
-            status['signals'].append(signal)
+                status['signals'].append(signal)
         else:
             signal = 0
             status['signals'].append(signal)
