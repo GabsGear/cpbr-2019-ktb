@@ -38,8 +38,9 @@
     Trader é o comerciante (eu e você) o cara que sabe a hora de compra e vender.
 
 
-    IPO VS ICO 
+    ## FALAR DE FLIPAGEM AQUI
 
+    IPO VS ICO 
 
     ```
         Ver se boto essa fonte
@@ -63,10 +64,3 @@
     * LSTM vs CNN
     * Aprendizado supervisionado vs aprendizado por reforço
     * Arquiteturas (indicadores, series temporais, tanh e relu)
-
-
-
-
-
-
-
