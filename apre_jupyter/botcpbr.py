@@ -52,7 +52,7 @@ class Aquisition(object):
         
     def get_candles(self):
         #candles = self.client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1HOUR, "1 Ago, 2018")
-        candles = self.client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1DAY)
+        candles = self.client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1MINUTE)
         self.parse(candles)
         return self.df
     
@@ -279,7 +279,6 @@ class cleanData(object):
         try:
             self.candles = self.candles.drop(['sell', 'buy'], axis=1)
         except:
-            print('Erro apagando sell e buy')
             pass
         
         self.candles = self.candles.dropna()

@@ -1,107 +1,276 @@
-INFO 2019-01-28 17:04:01,685 - LogFile created
-INFO 2019-01-28 17:04:06,861 - Waiting for a buy signal
-INFO 2019-01-28 17:04:13,014 - Waiting for a buy signal
-INFO 2019-01-28 17:04:19,026 - Waiting for a buy signal
-INFO 2019-01-28 17:04:25,229 - Waiting for a buy signal
-INFO 2019-01-28 17:04:31,189 - Waiting for a buy signal
-INFO 2019-01-28 17:04:37,159 - Waiting for a buy signal
-INFO 2019-01-28 17:04:43,117 - Waiting for a buy signal
-INFO 2019-01-28 17:04:49,408 - Waiting for a buy signal
-INFO 2019-01-28 17:04:55,675 - Waiting for a buy signal
-INFO 2019-01-28 17:05:01,726 - Waiting for a buy signal
-INFO 2019-01-28 17:05:07,691 - Waiting for a buy signal
-INFO 2019-01-28 17:05:13,688 - Waiting for a buy signal
-INFO 2019-01-28 17:05:19,677 - Waiting for a buy signal
-INFO 2019-01-28 17:05:25,850 - Waiting for a buy signal
-INFO 2019-01-28 17:05:31,872 - Waiting for a buy signal
-INFO 2019-01-28 17:05:38,149 - Waiting for a buy signal
-INFO 2019-01-28 17:05:38,844 - Sucefull creating a buy order
-INFO 2019-01-28 17:05:44,829 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:05:45,506 - Sucefull creating a sell order
-INFO 2019-01-28 17:05:51,770 - Waiting for a buy signal
-INFO 2019-01-28 17:05:57,966 - Waiting for a buy signal
-INFO 2019-01-28 17:06:04,062 - Waiting for a buy signal
-INFO 2019-01-28 17:06:05,010 - Sucefull creating a buy order
-INFO 2019-01-28 17:06:11,384 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:06:12,080 - Sucefull creating a sell order
-INFO 2019-01-28 17:06:18,023 - Waiting for a buy signal
-INFO 2019-01-28 17:06:24,532 - Waiting for a buy signal
-INFO 2019-01-28 17:06:30,635 - Waiting for a buy signal
-INFO 2019-01-28 17:06:36,878 - Waiting for a buy signal
-INFO 2019-01-28 17:06:37,563 - Sucefull creating a buy order
-INFO 2019-01-28 17:06:43,814 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:06:44,486 - Sucefull creating a sell order
-INFO 2019-01-28 17:06:50,580 - Waiting for a buy signal
-INFO 2019-01-28 17:06:56,735 - Waiting for a buy signal
-INFO 2019-01-28 17:07:02,866 - Waiting for a buy signal
-INFO 2019-01-28 17:07:09,346 - Waiting for a buy signal
-INFO 2019-01-28 17:07:15,290 - Waiting for a buy signal
-INFO 2019-01-28 17:07:15,960 - Sucefull creating a buy order
-INFO 2019-01-28 17:07:22,220 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:07:22,919 - Sucefull creating a sell order
-INFO 2019-01-28 17:07:29,301 - Waiting for a buy signal
-INFO 2019-01-28 17:07:35,265 - Waiting for a buy signal
-INFO 2019-01-28 17:07:41,522 - Waiting for a buy signal
-INFO 2019-01-28 17:07:47,685 - Waiting for a buy signal
-INFO 2019-01-28 17:07:48,365 - Sucefull creating a buy order
-INFO 2019-01-28 17:07:54,603 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:07:55,273 - Sucefull creating a sell order
-INFO 2019-01-28 17:08:01,253 - Waiting for a buy signal
-INFO 2019-01-28 17:08:07,220 - Waiting for a buy signal
-INFO 2019-01-28 17:08:07,888 - Sucefull creating a buy order
-INFO 2019-01-28 17:08:14,161 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:08:14,841 - Sucefull creating a sell order
-INFO 2019-01-28 17:08:21,635 - Waiting for a buy signal
-INFO 2019-01-28 17:08:22,316 - Sucefull creating a buy order
-INFO 2019-01-28 17:08:29,200 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:08:35,291 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:08:35,970 - Sucefull creating a sell order
-INFO 2019-01-28 17:08:41,935 - Waiting for a buy signal
-INFO 2019-01-28 17:08:42,636 - Sucefull creating a buy order
-INFO 2019-01-28 17:08:48,759 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:08:49,462 - Sucefull creating a sell order
-INFO 2019-01-28 17:08:55,691 - Waiting for a buy signal
-INFO 2019-01-28 17:09:01,700 - Waiting for a buy signal
-INFO 2019-01-28 17:09:07,929 - Waiting for a buy signal
-INFO 2019-01-28 17:09:14,191 - Waiting for a buy signal
-INFO 2019-01-28 17:09:20,147 - Waiting for a buy signal
-INFO 2019-01-28 17:09:26,328 - Waiting for a buy signal
-INFO 2019-01-28 17:09:32,448 - Waiting for a buy signal
-INFO 2019-01-28 17:09:38,722 - Waiting for a buy signal
-INFO 2019-01-28 17:09:44,697 - Waiting for a buy signal
-INFO 2019-01-28 17:09:50,638 - Waiting for a buy signal
-INFO 2019-01-28 17:09:56,670 - Waiting for a buy signal
-INFO 2019-01-28 17:10:02,697 - Waiting for a buy signal
-INFO 2019-01-28 17:10:08,710 - Waiting for a buy signal
-INFO 2019-01-28 17:10:14,744 - Waiting for a buy signal
-INFO 2019-01-28 17:10:20,888 - Waiting for a buy signal
-INFO 2019-01-28 17:10:27,009 - Waiting for a buy signal
-INFO 2019-01-28 17:10:33,349 - Waiting for a buy signal
-INFO 2019-01-28 17:10:39,728 - Waiting for a buy signal
-INFO 2019-01-28 17:10:40,396 - Sucefull creating a buy order
-INFO 2019-01-28 17:10:46,447 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:10:52,437 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:10:53,135 - Sucefull creating a sell order
-INFO 2019-01-28 17:10:59,997 - Waiting for a buy signal
-INFO 2019-01-28 17:11:06,143 - Waiting for a buy signal
-INFO 2019-01-28 17:11:06,850 - Sucefull creating a buy order
-INFO 2019-01-28 17:11:12,991 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:11:18,943 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:11:24,908 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:11:25,642 - Sucefull creating a sell order
-INFO 2019-01-28 17:11:31,673 - Waiting for a buy signal
-INFO 2019-01-28 17:11:37,993 - Waiting for a buy signal
-INFO 2019-01-28 17:11:43,957 - Waiting for a buy signal
-INFO 2019-01-28 17:11:44,630 - Sucefull creating a buy order
-INFO 2019-01-28 17:11:50,622 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:11:51,332 - Sucefull creating a sell order
-INFO 2019-01-28 17:11:57,564 - Waiting for a buy signal
-INFO 2019-01-28 17:11:58,234 - Sucefull creating a buy order
-INFO 2019-01-28 17:12:04,218 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:12:10,512 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:12:11,215 - Sucefull creating a sell order
-INFO 2019-01-28 17:12:17,316 - Waiting for a buy signal
-INFO 2019-01-28 17:12:18,003 - Sucefull creating a buy order
-INFO 2019-01-28 17:12:24,191 - We have open orders, waiting for sell signal
-INFO 2019-01-28 17:12:24,891 - Sucefull creating a sell order
-INFO 2019-01-28 17:12:30,834 - Waiting for a buy signal
+INFO 2019-01-28 17:43:18,602 - LogFile created
+INFO 2019-01-28 17:43:20,877 - Waiting for a buy signal
+INFO 2019-01-28 17:43:21,571 - Sucefull creating a buy order
+INFO 2019-01-28 17:44:23,048 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:44:23,739 - Sucefull creating a sell order
+INFO 2019-01-28 17:45:24,846 - Waiting for a buy signal
+INFO 2019-01-28 17:45:25,519 - Sucefull creating a buy order
+INFO 2019-01-28 17:46:27,145 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:47:28,249 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:48:29,738 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:49:30,861 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:50:32,084 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:51:33,255 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:52:34,477 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:53:35,571 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:54:36,903 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:55:38,103 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:56:39,393 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:57:40,506 - We have open orders, waiting for sell signal
+INFO 2019-01-28 17:57:41,181 - Sucefull creating a sell order
+INFO 2019-01-28 17:58:42,472 - Waiting for a buy signal
+INFO 2019-01-28 17:58:43,154 - Sucefull creating a buy order
+INFO 2019-01-28 17:59:44,381 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:00:45,628 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:01:46,840 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:02:48,052 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:03:49,257 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:04:50,486 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:05:51,623 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:06:52,825 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:06:53,489 - Sucefull creating a sell order
+INFO 2019-01-28 18:07:54,623 - Waiting for a buy signal
+INFO 2019-01-28 18:07:55,299 - Sucefull creating a buy order
+INFO 2019-01-28 18:08:56,798 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:09:58,198 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:09:58,899 - Sucefull creating a sell order
+INFO 2019-01-28 18:11:00,493 - Waiting for a buy signal
+INFO 2019-01-28 18:12:02,021 - Waiting for a buy signal
+INFO 2019-01-28 18:12:02,727 - Sucefull creating a buy order
+INFO 2019-01-28 18:13:04,386 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:14:06,075 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:15:07,774 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:16:09,228 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:16:09,906 - Sucefull creating a sell order
+INFO 2019-01-28 18:17:11,416 - Waiting for a buy signal
+INFO 2019-01-28 18:17:12,132 - Sucefull creating a buy order
+INFO 2019-01-28 18:18:13,888 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:19:15,482 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:20:16,970 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:21:18,394 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:22:20,091 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:23:21,458 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:23:22,163 - Sucefull creating a sell order
+INFO 2019-01-28 18:24:23,417 - Waiting for a buy signal
+INFO 2019-01-28 18:25:24,708 - Waiting for a buy signal
+INFO 2019-01-28 18:25:25,388 - Sucefull creating a buy order
+INFO 2019-01-28 18:26:26,952 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:27:29,377 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:28:30,514 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:29:31,883 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:30:33,163 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:30:33,846 - Sucefull creating a sell order
+INFO 2019-01-28 18:31:35,034 - Waiting for a buy signal
+INFO 2019-01-28 18:31:35,724 - Sucefull creating a buy order
+INFO 2019-01-28 18:32:36,953 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:32:37,622 - Sucefull creating a sell order
+INFO 2019-01-28 18:33:38,925 - Waiting for a buy signal
+INFO 2019-01-28 18:34:40,192 - Waiting for a buy signal
+INFO 2019-01-28 18:35:41,993 - Waiting for a buy signal
+INFO 2019-01-28 18:35:42,723 - Sucefull creating a buy order
+INFO 2019-01-28 18:36:44,008 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:37:45,544 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:38:46,818 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:39:48,201 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:39:48,878 - Sucefull creating a sell order
+INFO 2019-01-28 18:40:50,117 - Waiting for a buy signal
+INFO 2019-01-28 18:41:51,700 - Waiting for a buy signal
+INFO 2019-01-28 18:42:53,416 - Waiting for a buy signal
+INFO 2019-01-28 18:43:54,873 - Waiting for a buy signal
+INFO 2019-01-28 18:44:56,249 - Waiting for a buy signal
+INFO 2019-01-28 18:45:57,787 - Waiting for a buy signal
+INFO 2019-01-28 18:46:59,164 - Waiting for a buy signal
+INFO 2019-01-28 18:48:00,632 - Waiting for a buy signal
+INFO 2019-01-28 18:49:02,103 - Waiting for a buy signal
+INFO 2019-01-28 18:49:02,798 - Sucefull creating a buy order
+INFO 2019-01-28 18:50:04,243 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:51:06,038 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:51:06,738 - Sucefull creating a sell order
+INFO 2019-01-28 18:52:08,420 - Waiting for a buy signal
+INFO 2019-01-28 18:52:09,096 - Sucefull creating a buy order
+INFO 2019-01-28 18:53:10,360 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:54:11,699 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:55:12,872 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:56:14,284 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:57:15,607 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:58:17,944 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:59:19,279 - We have open orders, waiting for sell signal
+INFO 2019-01-28 18:59:19,971 - Sucefull creating a sell order
+INFO 2019-01-28 19:00:21,618 - Waiting for a buy signal
+INFO 2019-01-28 19:01:22,981 - Waiting for a buy signal
+INFO 2019-01-28 19:02:24,452 - Waiting for a buy signal
+INFO 2019-01-28 19:03:25,762 - Waiting for a buy signal
+INFO 2019-01-28 19:04:27,136 - Waiting for a buy signal
+INFO 2019-01-28 19:05:28,626 - Waiting for a buy signal
+INFO 2019-01-28 19:06:30,069 - Waiting for a buy signal
+INFO 2019-01-28 19:07:31,652 - Waiting for a buy signal
+INFO 2019-01-28 19:07:32,327 - Sucefull creating a buy order
+INFO 2019-01-28 19:08:33,732 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:08:34,417 - Sucefull creating a sell order
+INFO 2019-01-28 19:09:36,040 - Waiting for a buy signal
+INFO 2019-01-28 19:09:36,731 - Sucefull creating a buy order
+INFO 2019-01-28 19:10:38,254 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:11:40,574 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:12:42,098 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:13:43,650 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:14:45,026 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:15:46,420 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:16:47,847 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:17:49,202 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:18:50,658 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:19:52,312 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:20:53,790 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:21:55,115 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:22:56,452 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:22:57,834 - Sucefull creating a sell order
+INFO 2019-01-28 19:23:58,938 - Waiting for a buy signal
+INFO 2019-01-28 19:23:59,607 - Sucefull creating a buy order
+INFO 2019-01-28 19:25:01,095 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:25:01,767 - Sucefull creating a sell order
+INFO 2019-01-28 19:26:03,071 - Waiting for a buy signal
+INFO 2019-01-28 19:27:04,423 - Waiting for a buy signal
+INFO 2019-01-28 19:28:05,723 - Waiting for a buy signal
+INFO 2019-01-28 19:28:06,398 - Sucefull creating a buy order
+INFO 2019-01-28 19:29:07,914 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:30:09,277 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:31:10,827 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:31:11,508 - Sucefull creating a sell order
+INFO 2019-01-28 19:32:13,155 - Waiting for a buy signal
+INFO 2019-01-28 19:33:14,653 - Waiting for a buy signal
+INFO 2019-01-28 19:34:15,741 - Waiting for a buy signal
+INFO 2019-01-28 19:35:16,962 - Waiting for a buy signal
+INFO 2019-01-28 19:36:18,422 - Waiting for a buy signal
+INFO 2019-01-28 19:36:19,122 - Sucefull creating a buy order
+INFO 2019-01-28 19:37:20,709 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:38:22,292 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:39:23,891 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:40:25,386 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:41:26,884 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:41:27,571 - Sucefull creating a sell order
+INFO 2019-01-28 19:42:28,866 - Waiting for a buy signal
+INFO 2019-01-28 19:43:30,241 - Waiting for a buy signal
+INFO 2019-01-28 19:44:31,527 - Waiting for a buy signal
+INFO 2019-01-28 19:45:33,257 - Waiting for a buy signal
+INFO 2019-01-28 19:46:34,569 - Waiting for a buy signal
+INFO 2019-01-28 19:47:36,150 - Waiting for a buy signal
+INFO 2019-01-28 19:48:37,468 - Waiting for a buy signal
+INFO 2019-01-28 19:49:38,919 - Waiting for a buy signal
+INFO 2019-01-28 19:49:39,610 - Sucefull creating a buy order
+INFO 2019-01-28 19:50:40,810 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:51:42,170 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:52:43,392 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:52:44,080 - Sucefull creating a sell order
+INFO 2019-01-28 19:53:45,421 - Waiting for a buy signal
+INFO 2019-01-28 19:53:46,112 - Sucefull creating a buy order
+INFO 2019-01-28 19:54:47,592 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:55:48,954 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:56:50,184 - We have open orders, waiting for sell signal
+INFO 2019-01-28 19:56:50,879 - Sucefull creating a sell order
+INFO 2019-01-28 19:57:52,104 - Waiting for a buy signal
+INFO 2019-01-28 19:58:53,885 - Waiting for a buy signal
+INFO 2019-01-28 19:59:55,176 - Waiting for a buy signal
+INFO 2019-01-28 20:00:56,585 - Waiting for a buy signal
+INFO 2019-01-28 20:01:58,033 - Waiting for a buy signal
+INFO 2019-01-28 20:01:58,741 - Sucefull creating a buy order
+INFO 2019-01-28 20:03:00,374 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:04:01,721 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:05:03,353 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:05:04,450 - Sucefull creating a sell order
+INFO 2019-01-28 20:06:05,789 - Waiting for a buy signal
+INFO 2019-01-28 20:07:07,062 - Waiting for a buy signal
+INFO 2019-01-28 20:07:07,771 - Sucefull creating a buy order
+INFO 2019-01-28 20:08:09,204 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:08:09,891 - Sucefull creating a sell order
+INFO 2019-01-28 20:09:11,101 - Waiting for a buy signal
+INFO 2019-01-28 20:10:12,451 - Waiting for a buy signal
+INFO 2019-01-28 20:10:13,128 - Sucefull creating a buy order
+INFO 2019-01-28 20:11:14,287 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:12:15,501 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:13:16,636 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:14:17,834 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:14:18,518 - Sucefull creating a sell order
+INFO 2019-01-28 20:15:19,627 - Waiting for a buy signal
+INFO 2019-01-28 20:15:20,288 - Sucefull creating a buy order
+INFO 2019-01-28 20:16:21,564 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:17:22,607 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:18:24,226 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:19:25,440 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:19:26,127 - Sucefull creating a sell order
+INFO 2019-01-28 20:20:27,325 - Waiting for a buy signal
+INFO 2019-01-28 20:21:28,647 - Waiting for a buy signal
+INFO 2019-01-28 20:22:30,011 - Waiting for a buy signal
+INFO 2019-01-28 20:23:31,153 - Waiting for a buy signal
+INFO 2019-01-28 20:24:32,564 - Waiting for a buy signal
+INFO 2019-01-28 20:24:33,345 - Sucefull creating a buy order
+INFO 2019-01-28 20:25:34,732 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:25:35,415 - Sucefull creating a sell order
+INFO 2019-01-28 20:26:36,956 - Waiting for a buy signal
+INFO 2019-01-28 20:27:38,283 - Waiting for a buy signal
+INFO 2019-01-28 20:28:39,838 - Waiting for a buy signal
+INFO 2019-01-28 20:29:41,458 - Waiting for a buy signal
+INFO 2019-01-28 20:30:43,031 - Waiting for a buy signal
+INFO 2019-01-28 20:31:44,407 - Waiting for a buy signal
+INFO 2019-01-28 20:32:45,779 - Waiting for a buy signal
+INFO 2019-01-28 20:32:46,500 - Sucefull creating a buy order
+INFO 2019-01-28 20:33:47,813 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:33:48,501 - Sucefull creating a sell order
+INFO 2019-01-28 20:34:50,080 - Waiting for a buy signal
+INFO 2019-01-28 20:34:50,756 - Sucefull creating a buy order
+INFO 2019-01-28 20:35:51,982 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:36:53,278 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:37:54,884 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:38:56,429 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:39:57,639 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:40:58,932 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:42:00,167 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:43:01,532 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:44:02,744 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:45:04,124 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:45:04,832 - Sucefull creating a sell order
+INFO 2019-01-28 20:46:06,075 - Waiting for a buy signal
+INFO 2019-01-28 20:46:06,875 - Sucefull creating a buy order
+INFO 2019-01-28 20:47:08,233 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:48:09,545 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:49:11,147 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:50:12,500 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:51:13,744 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:52:15,046 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:53:16,641 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:54:18,118 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:55:19,673 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:56:21,040 - We have open orders, waiting for sell signal
+INFO 2019-01-28 20:56:21,759 - Sucefull creating a sell order
+INFO 2019-01-28 20:57:23,427 - Waiting for a buy signal
+INFO 2019-01-28 20:58:24,737 - Waiting for a buy signal
+INFO 2019-01-28 20:59:26,344 - Waiting for a buy signal
+INFO 2019-01-28 20:59:27,027 - Sucefull creating a buy order
+INFO 2019-01-28 21:00:28,425 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:00:29,120 - Sucefull creating a sell order
+INFO 2019-01-28 21:01:30,474 - Waiting for a buy signal
+INFO 2019-01-28 21:01:31,197 - Sucefull creating a buy order
+INFO 2019-01-28 21:02:33,483 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:03:34,886 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:04:36,550 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:05:38,013 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:06:40,289 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:07:41,675 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:08:43,291 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:09:44,702 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:10:46,214 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:11:47,884 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:12:49,137 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:13:50,575 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:14:51,873 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:14:52,575 - Sucefull creating a sell order
+INFO 2019-01-28 21:15:53,961 - Waiting for a buy signal
+INFO 2019-01-28 21:16:55,286 - Waiting for a buy signal
+INFO 2019-01-28 21:16:56,003 - Sucefull creating a buy order
+INFO 2019-01-28 21:17:57,739 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:18:59,335 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:20:01,032 - We have open orders, waiting for sell signal
+INFO 2019-01-28 21:20:01,738 - Sucefull creating a sell order
+INFO 2019-01-28 21:21:03,291 - Waiting for a buy signal
+INFO 2019-01-28 21:22:05,483 - Waiting for a buy signal
+INFO 2019-01-28 21:23:07,040 - Waiting for a buy signal
+INFO 2019-01-28 21:24:08,951 - Waiting for a buy signal
+INFO 2019-01-28 21:25:10,538 - Waiting for a buy signal
