@@ -5,7 +5,6 @@ RUN apt-get update && apt-get upgrade -y \
         libpq-dev \
         build-essential \
         git \
-        graphviz \
         sudo \
         cmake zlib1g-dev libjpeg-dev xvfb libav-tools xorg-dev libboost-all-dev libsdl2-dev swig \
     && rm -rf /var/lib/apt/lists/*
@@ -19,9 +18,6 @@ RUN conda install -y -c conda-forge \
 RUN pip install "gym[atari,box2d,classic_control]"
 RUN conda install -c anaconda pip 
 RUN pip install python-binance
-RUN pip install pyti
-RUN pip install pydotplus
-RUN conda install -c conda-forge keras 
 
 ARG username
 ARG userid

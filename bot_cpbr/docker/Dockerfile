@@ -27,7 +27,7 @@ ARG username
 ARG userid
 
 ARG home=/home/${username}
-ARG workdir=${home}/apre_jupyter
+ARG workdir=${home}/bot_cpbr
 
 RUN adduser ${username} --uid ${userid} --gecos '' --disabled-password \
     && echo "${username} ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/${username} \
@@ -45,7 +45,7 @@ RUN jupyter nbextension enable toc2/main
 # INFO: Jupyter and nbdime extension are not totally integrated (anaconda image is py36,
 #       nbdime checks for py35 at the moment, still the config below enables diffing
 #       notebooks with nbdiff (and nbdiff support in git diff command) after connecting
-#       to the container by "make exec" (or "docker-compose exec apre_jupyter bash")
+#       to the container by "make exec" (or "docker-compose exec bot_cpbr bash")
 #       You may also try running:
 #         nbd NOTEBOOK_NAME.ipynb
 #       to get nbdiff between checkpointed version and current version of the given notebook
