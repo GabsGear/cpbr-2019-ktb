@@ -21,7 +21,7 @@
 # 
 # A aquisição dos dados é feita através do wrapper para a REST API da Binance. Os dados são basicamente o preço do ativo no formato OHLCV (Open, High, Low, Close e Volume), em seguida se faz o parse para um dataframe do Pandas
 
-# In[11]:
+# In[1]:
 
 
 import requests, json
@@ -35,7 +35,7 @@ from datetime import datetime
 
 from math import pi
 import bokeh
-#bokeh.sampledata.download()
+bokeh.sampledata.download()
 from bokeh.plotting import figure, show, output_file, output_notebook
 from bokeh.sampledata.stocks import MSFT
 
@@ -108,7 +108,7 @@ class Aquisition(object):
 
 # O datafreme resultante pode ser visto abaixo:
 
-# In[12]:
+# In[2]:
 
 
 candles = Aquisition()
@@ -120,7 +120,7 @@ dataframe.head()
 # 
 # Agora pé necessário que tenhamos um entendimento melhor do problema, então em seguida faremos algumas análises em nossos dados para tentar obter algum insight  interessante.
 
-# In[13]:
+# In[3]:
 
 
 dataframe.shape
@@ -128,7 +128,7 @@ dataframe.shape
 
 # Então plota-se com o bokeh os candles com um stock chart no formato OHLCV
 
-# In[16]:
+# In[6]:
 
 
 plot = candles.plot_candles()
@@ -188,7 +188,7 @@ show(plot)
 # 
 # ***Vamos a implementação:*** 
 
-# In[20]:
+# In[7]:
 
 
 class Bbands(Aquisition):  
@@ -250,7 +250,7 @@ class Bbands(Aquisition):
 # 
 # Pode-se visualizar as bandas calculadas para uma melhor interpretação
 
-# In[21]:
+# In[9]:
 
 
 bands = Bbands()
@@ -265,7 +265,7 @@ show(plot)
 # 
 # Outro ponto importante é a possibilidade de adicionar uma interpretação as bandas extraindo mais um sinal delas, são os pontos de cruzamento da linha do fechamento (close) com as bandas superiores e inferiores. 
 
-# In[22]:
+# In[10]:
 
 
 bands.plot_cross_points()
@@ -275,7 +275,7 @@ bands.plot_cross_points()
 
 # Adicionando todos esse indicadores nosso dataframe fica o seguinte:
 
-# In[23]:
+# In[11]:
 
 
 bands.detect_cross()
@@ -290,7 +290,7 @@ bands.df.head()
 # 
 # 
 
-# In[24]:
+# In[12]:
 
 
 from pyti.exponential_moving_average import exponential_moving_average as ema
@@ -330,7 +330,7 @@ class Indicators():
 # 
 # #### O dataframe resultante é o seguinte:
 
-# In[25]:
+# In[13]:
 
 
 idc = Indicators(bands.df)
@@ -346,7 +346,7 @@ df.head()
 # 
 # Remove-se as colunas High, Low e Open para se observar mais facilmente a correlação entre as variáveis Close e os demais indicadores
 
-# In[26]:
+# In[14]:
 
 
 import matplotlib.pyplot as plt
@@ -369,7 +369,7 @@ class Corr(object):
         plt.show()
 
 
-# In[27]:
+# In[15]:
 
 
 c = Corr(df)
@@ -398,7 +398,7 @@ c.pearson()
 # 
 # Assim quando o preço subiu no futuro o candle atual ficara verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda, essa técnica é relativamente boa pra detectar vales e picos
 
-# In[28]:
+# In[16]:
 
 
 class Target(object):
@@ -448,13 +448,13 @@ class Target(object):
 
 # O resultado gráfico do look ahead pode ser observado abaixo:
 
-# In[29]:
+# In[18]:
 
 
 tgt = Target(df)
 tgt.test_target(5)
 plot = tgt.plot_targets()
-show(plo)
+show(plot)
 
 
 # ![Screenshot%20from%202019-01-19%2017-52-34.png](attachment:Screenshot%20from%202019-01-19%2017-52-34.png)
@@ -466,7 +466,7 @@ show(plo)
 # + 0- indica um ponto de compra (verde)
 # + 1- indica um ponto de venda (vermelho)
 
-# In[22]:
+# In[19]:
 
 
 def createTarget(candles, shift):
@@ -489,7 +489,7 @@ def createTarget(candles, shift):
     candles['target'] = target
 
 
-# In[23]:
+# In[20]:
 
 
 targ = tgt.candles
@@ -502,7 +502,7 @@ createTarget(targ, 5)
 # 
 # Se o preço na mudança de sinal de um trade de 0 para 1 o preço anterior for maior que o posterior o trade é vencedor, senão é perdedor (respeitando a lei da vida compre na baixa e venda na alta)
 
-# In[24]:
+# In[21]:
 
 
 class TestTarget():
@@ -541,7 +541,7 @@ class TestTarget():
         
 
 
-# In[25]:
+# In[22]:
 
 
 test = TestTarget(tgt.candles)
@@ -552,7 +552,7 @@ test.test()
 # 
 # Obs: Essas métricas de forma alguma avaliam com perfeição a estratégia, existem outros calculos mais complexos usados que não seram abordados aqui como drawndown, fator de risco e etc...
 
-# In[26]:
+# In[23]:
 
 
 test.eval_metrics()
@@ -571,7 +571,7 @@ print('Numero de acertos: {} \nNumero de erros: {} \nPorcentagem de acerto: {} \
 # Para treinar os algorítmos são necessárias ações em relação a limpeza dos dados, para isso remove-se as colunas buy e sell que não são mais necessárias e remove-se também todas as colunas NaN (data missing).
 # Também realiza-se um backup do dataset como csv
 
-# In[27]:
+# In[24]:
 
 
 class cleanData(object):
@@ -594,7 +594,7 @@ class cleanData(object):
 
 # Abaixo o  dataframe limpo:
 
-# In[28]:
+# In[25]:
 
 
 dt = cleanData(targ)
@@ -610,7 +610,7 @@ candles_no_NaN.head()
 # 
 # Também modela a entrada e saída dos algorítmos mapeando a equação.
 
-# In[29]:
+# In[26]:
 
 
 from sklearn.model_selection import train_test_split
@@ -639,7 +639,7 @@ y_test = test['target']
 # 
 # 1 Criar a decision tree
 
-# In[ ]:
+# In[27]:
 
 
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
@@ -650,7 +650,7 @@ dct = tree.fit(x_train, y_train)
 
 # 2 É bem legal visualizar a arvore resultante:
 
-# In[32]:
+# In[28]:
 
 
 import pydotplus
@@ -666,7 +666,7 @@ def showTree(tree, features, path):
     plt.imshow(img)
 
 
-# In[33]:
+# In[29]:
 
 
 get_ipython().run_cell_magic('time', '', "showTree(dct, features, 'minhaprimeiradct.png')")
@@ -674,7 +674,7 @@ get_ipython().run_cell_magic('time', '', "showTree(dct, features, 'minhaprimeira
 
 # Para ver o desempenho do algorítmo primeiro testa-se previsões com o dataset de test e em seguida calcula-se o acerto
 
-# In[34]:
+# In[30]:
 
 
 from sklearn.metrics import accuracy_score
@@ -713,7 +713,7 @@ print('Score = {}'.format(score))
 # + pipeline 3 suport vector machines com minmaxscaller
 # + pipeline 4 gradient boosting com minmaxscaller
 
-# In[35]:
+# In[31]:
 
 
 # Scallers pra padronizar os dados no momento testarei 2 nos pipelines
@@ -742,7 +742,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 
 
-# In[36]:
+# In[32]:
 
 
 pip_1 = Pipeline([
@@ -754,7 +754,7 @@ pip_1.fit(x_train, y_train)
 np.mean(cross_val_score(pip_1, x_train, y_train, cv=5))
 
 
-# In[37]:
+# In[33]:
 
 
 pip_2 = Pipeline([
@@ -766,7 +766,7 @@ pip_2.fit(x_train, y_train)
 np.mean(cross_val_score(pip_2, x_train, y_train, cv=5))
 
 
-# In[38]:
+# In[34]:
 
 
 pip_3 = Pipeline([
@@ -778,7 +778,7 @@ pip_3.fit(x_train, y_train)
 np.mean(cross_val_score(pip_3, x_train, y_train, cv=5))
 
 
-# In[100]:
+# In[35]:
 
 
 pip_4 = Pipeline([
@@ -800,7 +800,7 @@ np.mean(cross_val_score(pip_4, x_train, y_train, cv=5))
 # 
 # Abaixo cria-se 10 pipelines com combinações diferentes de algorítmos
 
-# In[101]:
+# In[36]:
 
 
 # random forest - standart
@@ -868,7 +868,7 @@ pip_10 = Pipeline([
 # 
 # Cria-se então uma pool de threads onde cada thread executara um pipeline e testara seu modelo, abaixo os resultados:
 
-# In[102]:
+# In[37]:
 
 
 results = []
@@ -896,7 +896,7 @@ class Threads (threading.Thread):
         df.index = df.index +1
 
 
-# In[103]:
+# In[38]:
 
 
 class Process():
@@ -928,7 +928,7 @@ class Process():
                 time.sleep(2)
 
 
-# In[104]:
+# In[39]:
 
 
 get_ipython().run_cell_magic('time', '', 'from IPython.display import clear_output\n\npc = Process()\npc.startProcess()\nclear_output()')
@@ -936,7 +936,7 @@ get_ipython().run_cell_magic('time', '', 'from IPython.display import clear_outp
 
 # #### Abaixo o podium
 
-# In[105]:
+# In[40]:
 
 
 pd.options.display.max_colwidth = 1000
@@ -948,7 +948,7 @@ df.head(3)
 
 # # Nosso vencedor é GradientBoostingClassifier, será o algoritmo ultilizado:
 
-# In[106]:
+# In[41]:
 
 
 df.head(1)['alg']

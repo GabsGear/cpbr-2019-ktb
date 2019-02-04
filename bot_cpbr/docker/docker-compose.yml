@@ -1,14 +1,14 @@
 version: "3"
 services:
-  apre_jupyter:
+  bot_cpbr:
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
       args:
         - username=devel
         - userid=1000
-    container_name: apre_jupyter
-    image: apre_jupyter
+    container_name: bot_cpbr
+    image: bot_cpbr
     restart: unless-stopped    
     logging:
       driver: json-file
@@ -18,5 +18,5 @@ services:
       - "8888:8888"
       - "6006:6006"
     volumes:
-      - ../:/home/devel/apre_jupyter
+      - ../:/home/devel/bot_cpbr
     command: /opt/conda/bin/jupyter notebook --ip='0.0.0.0' --port=8888 --no-browser
