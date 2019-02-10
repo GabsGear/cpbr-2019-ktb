@@ -391,9 +391,9 @@ c.pearson()
 # ```
 #     1 Para cada candle do dataframe
 #     2 Observe o close do candle atual e do candle atual + 10
-#     2 se close < close+10
-#     3    pinte o candle de verde
-#     4 senao pinte o candle de vermelho
+#     2 Se close < close+10
+#     3 pinte o candle de verde
+#     4 Senão pinte o candle de vermelho
 # ```
 # 
 # Assim quando o preço subiu no futuro o candle atual ficará verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda. Essa técnica é relativamente boa pra detectar vales e picos.
