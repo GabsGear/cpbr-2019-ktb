@@ -13,13 +13,13 @@
 
 # ### 1 Frame the problem and look at the big picture
 # 
-# Já sabemos que algorítmos de Machine Learning são válidos para a criação de estratégias para trader bots então agora nossa decisão é qual abortagem que iremos utilizar para a resolver o problema. 
+# Já sabemos que algoritmos de Machine Learning são válidos para a criação de estratégias para trader bots então agora nossa decisão é qual abortagem que iremos utilizar para a resolver o problema. 
 # 
-# Existem inúmeras opções de algorítmos e tecnicas para aplicar algorítmos de Machine Learning para trade, pode-se usar tecnicas de predição com redes neurais (LSTM OU CNN), também pode-se usar aprendizado por reforço mas nesse caso vamos modelar para utilizar um algorítmo de classificação.
+# Existem inúmeras opções de algoritmos e técnicas para aplicar algoritmos de Machine Learning para trade. Pode-se usar técnicas de predição com redes neurais (LSTM OU CNN) ou usar aprendizado por reforço, mas nesse caso vamos modelar para utilizar um algoritmo de classificação.
 
 # ### 2 Get The data
 # 
-# A aquisição dos dados é feita através do wrapper para a REST API da Binance. Os dados são basicamente o preço do ativo no formato OHLCV (Open, High, Low, Close e Volume), em seguida se faz o parse para um dataframe do Pandas
+# A aquisição dos dados é feita através do wrapper para a REST API da Binance. Os dados são basicamente o preço do ativo no formato OHLCV (Open, High, Low, Close e Volume), em seguida se faz o parse para um dataframe do Pandas.
 
 # In[1]:
 
@@ -106,7 +106,7 @@ class Aquisition(object):
         return p 
 
 
-# O datafreme resultante pode ser visto abaixo:
+# O dataframe resultante pode ser visto abaixo:
 
 # In[2]:
 
@@ -118,7 +118,7 @@ dataframe.head()
 
 # ### 3 Explore the data to gain insigts
 # 
-# Agora pé necessário que tenhamos um entendimento melhor do problema, então em seguida faremos algumas análises em nossos dados para tentar obter algum insight  interessante.
+# Agora é necessário ter um entendimento melhor do problema, então em seguida faremos algumas análises em nossos dados para tentar obter algum insight  interessante.
 
 # In[3]:
 
@@ -138,7 +138,7 @@ show(plot)
 # ![\images\candles.png](attachment:candles.png)
 # 
 
-# ### Iterpretando um candle:
+# ### Interpretando um candle:
 # 
 # #### Os 3 elementos dos Candlesticks
 # 
@@ -154,15 +154,15 @@ show(plot)
 # +mínimo
 # +máximo
 # 
-# Estes valores dão forma aos dois elementos que compões um Candle:
+# Estes valores dão forma aos dois elementos que compõem um Candle:
 # 
 # o corpo (que traz as informações de fechamento e abertura), e
-# a sombra (que informa os máximos e mínimos do período)
+# a sombra (que informa os máximos e mínimos do período).
 # 
 # #### 3. Cor
-# O terceiro elemento que compões um candlestick é a sua cor, e isso determina se o candlestick é de alta ou de baixa.
+# O terceiro elemento que compõem um candlestick é a sua cor, isso determina se o candlestick é de alta ou de baixa.
 # 
-# Quando o preço de fechamento está abaixo do preço de abertura, significa que o preço da ação caiu durante aquele determinado período, e o Candle será de baixa.
+# Quando o preço de fechamento está abaixo do preço de abertura, significa que o preço da ação caiu durante aquele determinado período e o Candle será de baixa.
 # 
 # Quando o preço de fechamento for maior que o preço de abertura, significa que o preço subiu durante aquele período e o candlestick será de alta.
 # 
@@ -172,17 +172,17 @@ show(plot)
 
 # ### Somente Candles não são o suficiente
 # 
-# Infelizmente apesar dos candles de nos dizerem muito sobre o ativo ainda não são dados suficiente para rodar nos algorítmos, para isso calculam-se alguns indicadores de mercado. Indicadores de mercado são métodos práticos para obter estimativas sobre o valor da empresa, então são amplamente utilizados por traders para a comparação entre ações facilitando (ou não na tomada de decisão)
+# Infelizmente apesar dos candles nos dizerem muito sobre o ativo, ainda não são dados suficientes para rodar nos algoritmos. Para isso calculam-se alguns indicadores de mercado. Indicadores de mercado são métodos práticos para obter estimativas sobre o valor da empresa, então são amplamente utilizados por traders para a comparação entre ações facilitando, ou não, na tomada de decisão.
 
 # ### Calculando indicadores
 # 
 # 
 # 
-# Existem muitos indicadores famosos e a maioria é explicita por formulas matemáticas com base em estatística, um exemplo são as famosas Bandas de boillinger
+# Existem muitos indicadores famosos e a maioria é explicita por fórmulas matemáticas com base em estatística. Um exemplo são as famosas Bandas de Boillinger.
 # 
 # Análise de Bollinger (também conhecida como Bandas de Bollinger) são ferramentas de análise técnica criadas por John Bollinger no início dos anos 80. Este indicador possui uma forte relação com a volatilidade, possibilitando, assim, a sua comparação com os níveis de preços num determinado período de tempo. O maior objetivo das bandas Bollinger é fornecer uma ideia relativa de alto e baixo. Por definição, os preços são altos na linha (banda) superior e baixos na linha (banda) inferior.
 # 
-# O indicador é calculado pela seguinte formula: 
+# O indicador é calculado pela seguinte fórmula: 
 # 
 # ![\images\bbands.png](attachment:bbands.png)
 # 
@@ -250,7 +250,7 @@ class Bbands(Aquisition):
 # 
 # Pode-se visualizar as bandas calculadas para uma melhor interpretação
 
-# In[9]:
+# In[2]:
 
 
 bands = Bbands()
@@ -263,9 +263,9 @@ show(plot)
 
 # #  Cross
 # 
-# Outro ponto importante é a possibilidade de adicionar uma interpretação as bandas extraindo mais um sinal delas, são os pontos de cruzamento da linha do fechamento (close) com as bandas superiores e inferiores. 
+# Outro ponto importante é a possibilidade de adicionar uma interpretação das bandas extraindo mais um sinal delas. São os pontos de cruzamento da linha do fechamento (close) com as bandas superiores e inferiores. 
 
-# In[10]:
+# In[1]:
 
 
 bands.plot_cross_points()
@@ -282,11 +282,11 @@ bands.detect_cross()
 bands.df.head()
 
 
-# Agora além dos indicadores do gráfico OHLCV ainda temos uma media móvel, o desfio padrão o valor das bandas de boillinger e o cruzamento das mesmas. Observe que poluimos o dataframe com campos de data missing (NaN), esses pontos se encontram nos candles iniciais antes de existirem pontos suficientes para calcular as medias móveis
+# Agora além dos indicadores do gráfico OHLCV ainda temos uma média móvel, o desfio padrão o valor das Bandas de Boillinger e o cruzamento das mesmas. Observe que poluimos o dataframe com campos de data missing (NaN) e esses pontos se encontram nos candles iniciais antes de existirem pontos suficientes para calcular as médias móveis.
 
 # ## Adicionando mais indicadores
 # 
-# Agora que sabemos o que são indicadores e como implementa-los vamos ao modo mais fácil e adicionar mais alguns usando a biblioteca pyti
+# Agora que sabemos o que são indicadores e como implementa-los vamos ao modo mais fácil adicionando mais alguns usando a biblioteca pyti
 # 
 # 
 
@@ -324,8 +324,8 @@ class Indicators():
 # + #### Quantos indicadores são o suficiente?
 # + #### Quais os melhores indicadores?
 # + #### Indicadores realmente conseguem expressar bem a reação do mercado?
-# + #### Indicadores com base em analise natural são válidos?
-# + #### Pode-se usar a saída de um algorítmo de machine learning como um indicador para outro algorítmo?
+# + #### Indicadores com base em análise natural são válidos?
+# + #### Pode-se usar a saída de um algoritmo de machine learning como um indicador para outro algoritmo?
 # 
 # 
 # #### O dataframe resultante é o seguinte:
@@ -344,7 +344,7 @@ df.head()
 # 
 # Os coefieientes de pearson são úteis pois mostram a correlação entre duas séries temporais.
 # 
-# Remove-se as colunas High, Low e Open para se observar mais facilmente a correlação entre as variáveis Close e os demais indicadores
+# Remove-se as colunas High, Low e Open para se observar mais facilmente a correlação entre as variáveis Close e os demais indicadores.
 
 # In[14]:
 
@@ -381,13 +381,13 @@ c.pearson()
 # ## 4 Prepare the data to better spose the underlying patterns to Machine Learning algorithms
 # 
 # 
-# Os algorítmos de machine Learning  precisam que os dados estejam preparados para sua execução, veremos melhor a diante. O primeiro passo é definir uma variável target, onde o algorítmo usará essa variável nos testes e treinos, também sera a variável que as predições são realizadas.
+# Os algoritmos de machine learning  precisam que os dados estejam preparados para sua execução, veremos melhor a diante. O primeiro passo é definir uma variável target onde o algoritmo usará essa variável nos testes e treinos, também será a variável que as predições são realizadas.
 
 # ### Criando variável target
 # 
-# Como os indicadores estão calculados o proximo passo é definir uma variável target para o algorítmo classificar.
+# Como os indicadores estão calculados o próximo passo é definir uma variável target para o algoritmo classificar.
 # 
-# O método utilizado é look ahead descrito abaixo:
+# O método utilizado é look ahead, descrito abaixo:
 # ```
 #     1 Para cada candle do dataframe
 #     2 Observe o close do candle atual e do candle atual + 10
@@ -396,7 +396,7 @@ c.pearson()
 #     4 senao pinte o candle de vermelho
 # ```
 # 
-# Assim quando o preço subiu no futuro o candle atual ficara verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda, essa técnica é relativamente boa pra detectar vales e picos
+# Assim quando o preço subiu no futuro o candle atual ficará verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda. Essa técnica é relativamente boa pra detectar vales e picos.
 
 # In[16]:
 
@@ -459,7 +459,7 @@ show(plot)
 
 # ![Screenshot%20from%202019-01-19%2017-52-34.png](attachment:Screenshot%20from%202019-01-19%2017-52-34.png)
 
-# ### Agora que percebemos que essa estratégia de definição do target é rasoável adicionamos ao dataframe
+# ### Agora que percebemos que essa estratégia de definição do target é razoável adicionamos ao dataframe
 # 
 # Adiciona-se o target ao dataframe:
 # 
@@ -498,9 +498,9 @@ createTarget(targ, 5)
 
 # ## Teste de acerto do target
 # 
-# Esse método é muito simples e pode ter sua eficiência facilmente medida percorrendo cada target e verificando a mudança de sinal. e classificando o trade como vencedor ou perdedor.
+# Esse método é muito simples e pode ter sua eficiência facilmente medida percorrendo cada target, verificando a mudança de sinal e classificando o trade como vencedor ou perdedor.
 # 
-# Se o preço na mudança de sinal de um trade de 0 para 1 o preço anterior for maior que o posterior o trade é vencedor, senão é perdedor (respeitando a lei da vida compre na baixa e venda na alta)
+# Se o preço na mudança de sinal de um trade de 0 para 1 o preço anterior for maior que o posterior o trade é vencedor, senão é perdedor (respeitando a lei da vida: compre na baixa e venda na alta).
 
 # In[21]:
 
@@ -548,9 +548,9 @@ test = TestTarget(tgt.candles)
 test.test()
 
 
-# #### Metricas do teste
+# #### Métricas do teste
 # 
-# Obs: Essas métricas de forma alguma avaliam com perfeição a estratégia, existem outros calculos mais complexos usados que não seram abordados aqui como drawndown, fator de risco e etc...
+# Obs: Essas métricas de forma alguma avaliam com perfeição a estratégia, existem outros c[alculos mais complexos usados que não seram abordados aqui como drawndown, fator de risco e etc...
 
 # In[23]:
 
@@ -562,14 +562,14 @@ print('Numero de acertos: {} \nNumero de erros: {} \nPorcentagem de acerto: {} \
 
 # ### ----------------------- NOTA IMPORTANTE-----------------
 # 
-# Essa taxa de acerto de  70%,  significa que nosso bot vai alcançar essa taxa de acerto mesmo que consigamos criar modelos de machine learning com 100% de precisão, pois os modelos são criados para prever os sinais de compra e venda. 
-# A solução para esse problema seria usar uma técnica de otimização que encontre os picos e vales do gráfico para que assim aumente a qualidade do nosso dataset conseguentemente diminuindo esse gargalo e melhorando o resultado final dos algorítmos. 
+# Essa taxa de acerto de  70%  significa que nosso bot vai alcançar essa taxa de acerto mesmo que consigamos criar modelos de machine learning com 100% de precisão, pois os modelos são criados para prever os sinais de compra e venda. 
+# A solução para esse problema seria usar uma técnica de otimização que encontre os picos e vales do gráfico para que assim aumente a qualidade do nosso dataset, consequentemente diminuindo esse gargalo e melhorando o resultado final dos algoritmos. 
 # Ou seja no final para estimar o desempenho é necessário considerar esse erro e propaga-lo.
 
 # ### Limpeza dos dados
 # 
-# Para treinar os algorítmos são necessárias ações em relação a limpeza dos dados, para isso remove-se as colunas buy e sell que não são mais necessárias e remove-se também todas as colunas NaN (data missing).
-# Também realiza-se um backup do dataset como csv
+# Para treinar os algoritmos são necessárias ações em relação a limpeza dos dados, para isso remove-se as colunas buy e sell que não são mais necessárias e remove-se também todas as colunas NaN (data missing).
+# Também realiza-se um backup do dataset como csv.
 
 # In[24]:
 
@@ -604,9 +604,9 @@ candles_no_NaN.head()
 
 # # Definindo target, features e dividindo treino e  teste
 
-# Para a execução e validação dos algorítmos divide-se o dataset em treino e teste, onde 80% no caso é usado para treino e os outros 20% para testes.
+# Para a execução e validação dos algoritmos divide-se o dataset em treino e teste, onde 80% no caso é usado para treino e os outros 20% para testes.
 # 
-# Nesse passo também deve-se realizar a feature selection, que serão os inputs do seu algorítmo (nesse caso não se aplicou nenhuma técnica, somente a remoção da feature Data)
+# Nesse passo também deve-se realizar a feature selection, que serão os inputs do seu algoritmo (nesse caso não se aplicou nenhuma técnica, somente a remoção da feature Data).
 # 
 # Também modela a entrada e saída dos algorítmos mapeando a equação.
 
@@ -633,7 +633,7 @@ y_test = test['target']
 
 # # 5 Explore many diferent models and short-list the best ones
 
-# A parte mais custosa do processo já se encerrou, agora entra a parte mais divertida onde testamos os algorítmos de classificação para verificar quem da o melhor resultado no nosso problema
+# A parte mais custosa do processo já se encerrou, agora entra a parte mais divertida onde testamos os algoritmos de classificação para verificar quem dá o melhor resultado no nosso problema.
 # 
 # #### Primeiro cria-se um modelo simples de decision tree, vejamos:
 # 
@@ -648,7 +648,7 @@ tree = DecisionTreeClassifier(min_samples_split=100)
 dct = tree.fit(x_train, y_train)
 
 
-# 2 É bem legal visualizar a arvore resultante:
+# 2 É bem legal visualizar a árvore resultante:
 
 # In[28]:
 
@@ -672,7 +672,7 @@ def showTree(tree, features, path):
 get_ipython().run_cell_magic('time', '', "showTree(dct, features, 'minhaprimeiradct.png')")
 
 
-# Para ver o desempenho do algorítmo primeiro testa-se previsões com o dataset de test e em seguida calcula-se o acerto
+# Para ver o desempenho do algoritmo primeiro testa-se previsões com o dataset de test e em seguida calcula-se o acerto.
 
 # In[30]:
 
@@ -689,23 +689,23 @@ print('Score = {}'.format(score))
 # Nesse teste obtemos 67% de acerto, que pode ser facilmente melhorado pois cometemos alguns erros nesse teste:
 # 
 # + 1 Os dados não estavam normalizados
-# + 2 Árvores de decisão tem um grande numero de impuresas e não sao a melhor opção para a aplicação
-# + 3 Rodamos o algorítmo com todos os hyperparámetros e features default
+# + 2 Árvores de decisão tem um grande número de impurezas e não são a melhor opção para a aplicação
+# + 3 Rodamos o algoritmo com todos os hyperparametros e features default
 # + 4 O método de teste usado não é confiável 
 
 # #### Soluções para os problemas
-# + 1 Normalizar os dados na mesma escala, o scklearn tem algumas tecnicas de normalização como StandardScaler e MinMaxScaler
-# + 2 Testar algorítmos mais elaborados, existem muitos a disposição como Random Forest e Gradient Boosting
-# + 3 Otimizar hiperparámetros com técnicas como por exemplo GradientSearch e Bagging 
+# + 1 Normalizar os dados na mesma escala, o scklearn tem algumas técnicas de normalização como StandardScaler e MinMaxScaler
+# + 2 Testar algoritmos mais elaborados, existem muitos a disposição como Random Forest e Gradient Boosting
+# + 3 Otimizar hiperparametros com técnicas como por exemplo GradientSearch e Bagging 
 # + 4 Testar com K-fold
 
 # # Pipelines 
 # 
-# Para corrigir alguns erros e testar mais algorítmos com menos exforço usamos pipelines onde se encapsula os algorítmos para que possam facilmente ser treinados com maior facilidade
+# Para corrigir alguns erros e testar mais algoritmos com menos exforço usamos pipelines onde se encapsula os algoritmos para que possam ser treinados com maior facilidade.
 
 # ### Criando pipelines para teste dos modelos
 # 
-# #### Crio 4 pipelines e verifico a accuracia de todos com cross validation com 5 dobras utilizando diferentes combinações de scallers
+# #### Crio 4 pipelines e verifico a acurácia de todos com cross validation com 5 dobras utilizando diferentes combinações de scallers
 # 
 # 
 # + pipeline 1 random forest com standart scaller
@@ -792,13 +792,13 @@ np.mean(cross_val_score(pip_4, x_train, y_train, cv=5))
 
 # ### Como esperado
 # 
-# Os modelos com melhor resultado foram BaggingClassifier(RandomForestClassifier()) onde combinamos RandomForest com a tecnica de Bagging, e o algorítmo GradientBoostingClassifier() que já possui um ótimo historico e vence muitas competições no Kaggle.
+# Os modelos com melhor resultado foram BaggingClassifier(RandomForestClassifier()) onde combinamos RandomForest com a técnica de Bagging e o algoritmo GradientBoostingClassifier(), que já possui um ótimo histórico e vence muitas competições no Kaggle.
 
 # ## Automatizando testes
 # 
 # Pipelines são facilmente automatizadas pois podemos criar as pipelines para nosso modelo e em seguida paralelizar o processamento por meio de threads.
 # 
-# Abaixo cria-se 10 pipelines com combinações diferentes de algorítmos
+# Abaixo cria-se 10 pipelines com combinações diferentes de algoritmos.
 
 # In[36]:
 
@@ -866,7 +866,7 @@ pip_10 = Pipeline([
 
 # ### Pool de threads
 # 
-# Cria-se então uma pool de threads onde cada thread executara um pipeline e testara seu modelo, abaixo os resultados:
+# Cria-se então uma pool de threads onde cada thread executará um pipeline e testará seu modelo. Abaixo os resultados:
 
 # In[37]:
 
@@ -956,7 +956,7 @@ df.head(1)['alg']
 
 # ## 6 fine tune your models and combine them into a great solution
 # 
-# Desafio, nessa parte retorne a seleção das features, target e utilize metodos como gridsearch para encontrar a melhor combinação de parâmetros
+# Desafio, nessa parte retorne a seleção das features, target e utilize métodos como gridsearch para encontrar a melhor combinação de parâmetros.
 
 # # Full test
 
@@ -1118,4 +1118,4 @@ get_ipython().run_cell_magic('time', '', 'seed = 7\nnp.random.seed(seed)\n\nesti
 # 
 # Para estimar o erro não podemos esquecer do erro inicial então para saber o erro total multiplica-se a taxa de acerto do lookahead de 0.7 com a taxa de acerto do modelo 0.82, obtendo um acerto total de 57% dos trades.
 
-# # 7 Present  a solution -> proximo arquivo
+# # 7 Present  a solution -> próximo arquivo
