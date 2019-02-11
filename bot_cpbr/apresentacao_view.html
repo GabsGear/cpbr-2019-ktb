@@ -11794,8 +11794,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1-Frame-the-problem-and-look-at-the-big-picture">1 Frame the problem and look at the big picture<a class="anchor-link" href="#1-Frame-the-problem-and-look-at-the-big-picture">&#182;</a></h3><p>Já sabemos que algorítmos de Machine Learning são válidos para a criação de estratégias para trader bots então agora nossa decisão é qual abortagem que iremos utilizar para a resolver o problema.</p>
-<p>Existem inúmeras opções de algorítmos e tecnicas para aplicar algorítmos de Machine Learning para trade, pode-se usar tecnicas de predição com redes neurais (LSTM OU CNN), também pode-se usar aprendizado por reforço mas nesse caso vamos modelar para utilizar um algorítmo de classificação.</p>
+<h3 id="1-Frame-the-problem-and-look-at-the-big-picture">1 Frame the problem and look at the big picture<a class="anchor-link" href="#1-Frame-the-problem-and-look-at-the-big-picture">&#182;</a></h3><p>Já sabemos que algoritmos de Machine Learning são válidos para a criação de estratégias para trader bots então agora nossa decisão é qual abortagem que iremos utilizar para a resolver o problema.</p>
+<p>Existem inúmeras opções de algoritmos e técnicas para aplicar algoritmos de Machine Learning para trade. Pode-se usar técnicas de predição com redes neurais (LSTM OU CNN) ou usar aprendizado por reforço, mas nesse caso vamos modelar para utilizar um algoritmo de classificação.</p>
 
 </div>
 </div>
@@ -11804,7 +11804,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2-Get-The-data">2 Get The data<a class="anchor-link" href="#2-Get-The-data">&#182;</a></h3><p>A aquisição dos dados é feita através do wrapper para a REST API da Binance. Os dados são basicamente o preço do ativo no formato OHLCV (Open, High, Low, Close e Volume), em seguida se faz o parse para um dataframe do Pandas</p>
+<h3 id="2-Get-The-data">2 Get The data<a class="anchor-link" href="#2-Get-The-data">&#182;</a></h3><p>A aquisição dos dados é feita através do wrapper para a REST API da Binance. Os dados são basicamente o preço do ativo no formato OHLCV (Open, High, Low, Close e Volume), em seguida se faz o parse para um dataframe do Pandas.</p>
 
 </div>
 </div>
@@ -11967,7 +11967,7 @@ Downloading: routes.csv (377280 bytes)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O datafreme resultante pode ser visto abaixo:</p>
+<p>O dataframe resultante pode ser visto abaixo:</p>
 
 </div>
 </div>
@@ -12096,7 +12096,7 @@ Downloading: routes.csv (377280 bytes)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="3-Explore-the-data-to-gain-insigts">3 Explore the data to gain insigts<a class="anchor-link" href="#3-Explore-the-data-to-gain-insigts">&#182;</a></h3><p>Agora pé necessário que tenhamos um entendimento melhor do problema, então em seguida faremos algumas análises em nossos dados para tentar obter algum insight  interessante.</p>
+<h3 id="3-Explore-the-data-to-gain-insigts">3 Explore the data to gain insigts<a class="anchor-link" href="#3-Explore-the-data-to-gain-insigts">&#182;</a></h3><p>Agora é necessário ter um entendimento melhor do problema, então em seguida faremos algumas análises em nossos dados para tentar obter algum insight  interessante.</p>
 
 </div>
 </div>
@@ -12184,10 +12184,10 @@ Downloading: routes.csv (377280 bytes)
 
 
 
-<div id="d1ba5453-e464-46ba-945f-7bf10d242187"></div>
+<div id="fbf8dac3-9bbd-4865-a36a-3de7c7a34ef0"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d1ba5453-e464-46ba-945f-7bf10d242187');
+var element = $('#fbf8dac3-9bbd-4865-a36a-3de7c7a34ef0');
 
 (function(root) {
   function now() {
@@ -12482,10 +12482,10 @@ var element = $('#d1ba5453-e464-46ba-945f-7bf10d242187');
 
 
 
-<div id="343bb254-3ed2-4c34-bbc0-ffaf96e2f494"></div>
+<div id="5240323b-1510-4ba0-8132-2efe21705929"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#343bb254-3ed2-4c34-bbc0-ffaf96e2f494');
+var element = $('#5240323b-1510-4ba0-8132-2efe21705929');
 (function(root) {
   function embed_document(root) {
     
@@ -12533,17 +12533,17 @@ var element = $('#343bb254-3ed2-4c34-bbc0-ffaf96e2f494');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Iterpretando-um-candle:">Iterpretando um candle:<a class="anchor-link" href="#Iterpretando-um-candle:">&#182;</a></h3><h4 id="Os-3-elementos-dos-Candlesticks">Os 3 elementos dos Candlesticks<a class="anchor-link" href="#Os-3-elementos-dos-Candlesticks">&#182;</a></h4><h4 id="1.-Per&#237;odo">1. Per&#237;odo<a class="anchor-link" href="#1.-Per&#237;odo">&#182;</a></h4><p>O principal conceito dos candlesticks é que cada candle representa o que ocorreu com o preço de uma ação durante um determinado período de tempo. Cada candle pode representar 1 minuto, 5 minutos, 1 hora, 1 semana, 1 mês e até mesmo 1 ano. Você é que escolhe.</p>
+<h3 id="Interpretando-um-candle:">Interpretando um candle:<a class="anchor-link" href="#Interpretando-um-candle:">&#182;</a></h3><h4 id="Os-3-elementos-dos-Candlesticks">Os 3 elementos dos Candlesticks<a class="anchor-link" href="#Os-3-elementos-dos-Candlesticks">&#182;</a></h4><h4 id="1.-Per&#237;odo">1. Per&#237;odo<a class="anchor-link" href="#1.-Per&#237;odo">&#182;</a></h4><p>O principal conceito dos candlesticks é que cada candle representa o que ocorreu com o preço de uma ação durante um determinado período de tempo. Cada candle pode representar 1 minuto, 5 minutos, 1 hora, 1 semana, 1 mês e até mesmo 1 ano. Você é que escolhe.</p>
 <h4 id="2.-Formato">2. Formato<a class="anchor-link" href="#2.-Formato">&#182;</a></h4><p>O formato do candle por sua vez é determinado por importantes valores que o preço da ação atingiu durante este determinado período. São os preço de:</p>
 <p>+abertura
 +fechamento
 +mínimo
 +máximo</p>
-<p>Estes valores dão forma aos dois elementos que compões um Candle:</p>
+<p>Estes valores dão forma aos dois elementos que compõem um Candle:</p>
 <p>o corpo (que traz as informações de fechamento e abertura), e
-a sombra (que informa os máximos e mínimos do período)</p>
-<h4 id="3.-Cor">3. Cor<a class="anchor-link" href="#3.-Cor">&#182;</a></h4><p>O terceiro elemento que compões um candlestick é a sua cor, e isso determina se o candlestick é de alta ou de baixa.</p>
-<p>Quando o preço de fechamento está abaixo do preço de abertura, significa que o preço da ação caiu durante aquele determinado período, e o Candle será de baixa.</p>
+a sombra (que informa os máximos e mínimos do período).</p>
+<h4 id="3.-Cor">3. Cor<a class="anchor-link" href="#3.-Cor">&#182;</a></h4><p>O terceiro elemento que compõem um candlestick é a sua cor, isso determina se o candlestick é de alta ou de baixa.</p>
+<p>Quando o preço de fechamento está abaixo do preço de abertura, significa que o preço da ação caiu durante aquele determinado período e o Candle será de baixa.</p>
 <p>Quando o preço de fechamento for maior que o preço de abertura, significa que o preço subiu durante aquele período e o candlestick será de alta.</p>
 <p>Veja na figura abaixo como interpretar cada um dos três elementos do candlestick:</p>
 <p><img src="attachment:explain_candle.png" alt="\images\explain_candle.png"></p>
@@ -12555,7 +12555,7 @@ a sombra (que informa os máximos e mínimos do período)</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Somente-Candles-n&#227;o-s&#227;o-o-suficiente">Somente Candles n&#227;o s&#227;o o suficiente<a class="anchor-link" href="#Somente-Candles-n&#227;o-s&#227;o-o-suficiente">&#182;</a></h3><p>Infelizmente apesar dos candles de nos dizerem muito sobre o ativo ainda não são dados suficiente para rodar nos algorítmos, para isso calculam-se alguns indicadores de mercado. Indicadores de mercado são métodos práticos para obter estimativas sobre o valor da empresa, então são amplamente utilizados por traders para a comparação entre ações facilitando (ou não na tomada de decisão)</p>
+<h3 id="Somente-Candles-n&#227;o-s&#227;o-o-suficiente">Somente Candles n&#227;o s&#227;o o suficiente<a class="anchor-link" href="#Somente-Candles-n&#227;o-s&#227;o-o-suficiente">&#182;</a></h3><p>Infelizmente apesar dos candles nos dizerem muito sobre o ativo, ainda não são dados suficientes para rodar nos algoritmos. Para isso calculam-se alguns indicadores de mercado. Indicadores de mercado são métodos práticos para obter estimativas sobre o valor da empresa, então são amplamente utilizados por traders para a comparação entre ações facilitando, ou não, na tomada de decisão.</p>
 
 </div>
 </div>
@@ -12564,9 +12564,9 @@ a sombra (que informa os máximos e mínimos do período)</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Calculando-indicadores">Calculando indicadores<a class="anchor-link" href="#Calculando-indicadores">&#182;</a></h3><p>Existem muitos indicadores famosos e a maioria é explicita por formulas matemáticas com base em estatística, um exemplo são as famosas Bandas de boillinger</p>
+<h3 id="Calculando-indicadores">Calculando indicadores<a class="anchor-link" href="#Calculando-indicadores">&#182;</a></h3><p>Existem muitos indicadores famosos e a maioria é explicita por fórmulas matemáticas com base em estatística. Um exemplo são as famosas Bandas de Boillinger.</p>
 <p>Análise de Bollinger (também conhecida como Bandas de Bollinger) são ferramentas de análise técnica criadas por John Bollinger no início dos anos 80. Este indicador possui uma forte relação com a volatilidade, possibilitando, assim, a sua comparação com os níveis de preços num determinado período de tempo. O maior objetivo das bandas Bollinger é fornecer uma ideia relativa de alto e baixo. Por definição, os preços são altos na linha (banda) superior e baixos na linha (banda) inferior.</p>
-<p>O indicador é calculado pela seguinte formula:</p>
+<p>O indicador é calculado pela seguinte fórmula:</p>
 <p><img src="attachment:bbands.png" alt="\images\bbands.png"></p>
 <p><strong><em>Vamos a implementação:</em></strong></p>
 
@@ -12649,7 +12649,7 @@ a sombra (que informa os máximos e mínimos do período)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bands</span> <span class="o">=</span> <span class="n">Bbands</span><span class="p">()</span>
@@ -12671,355 +12671,18 @@ a sombra (que informa os máximos e mínimos do período)</p>
 <div class="prompt"></div>
 
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-38124890f2cd&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>bands <span class="ansi-blue-fg">=</span> Bbands<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> bands<span class="ansi-blue-fg">.</span>eval_boillinger_bands<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> plot <span class="ansi-blue-fg">=</span> bands<span class="ansi-blue-fg">.</span>plot_bands<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> show<span class="ansi-blue-fg">(</span>plot<span class="ansi-blue-fg">)</span>
 
-<div class="output_html rendered_html output_subarea ">
-
-    <div class="bk-root">
-        <a href="https://bokeh.pydata.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
-        <span id="7670b8d2-5372-430d-94e8-438e663cee0d">Loading BokehJS ...</span>
-    </div>
+<span class="ansi-red-fg">NameError</span>: name &#39;Bbands&#39; is not defined</pre>
 </div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
-<div id="4bf48a59-406b-4da2-8b61-6c43fb65f66b"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#4bf48a59-406b-4da2-8b61-6c43fb65f66b');
-
-(function(root) {
-  function now() {
-    return new Date();
-  }
-
-  var force = true;
-
-  if (typeof (root._bokeh_onload_callbacks) === "undefined" || force === true) {
-    root._bokeh_onload_callbacks = [];
-    root._bokeh_is_loading = undefined;
-  }
-
-  var JS_MIME_TYPE = 'application/javascript';
-  var HTML_MIME_TYPE = 'text/html';
-  var EXEC_MIME_TYPE = 'application/vnd.bokehjs_exec.v0+json';
-  var CLASS_NAME = 'output_bokeh rendered_html';
-
-  /**
-   * Render data to the DOM node
-   */
-  function render(props, node) {
-    var script = document.createElement("script");
-    node.appendChild(script);
-  }
-
-  /**
-   * Handle when an output is cleared or removed
-   */
-  function handleClearOutput(event, handle) {
-    var cell = handle.cell;
-
-    var id = cell.output_area._bokeh_element_id;
-    var server_id = cell.output_area._bokeh_server_id;
-    // Clean up Bokeh references
-    if (id !== undefined) {
-      Bokeh.index[id].model.document.clear();
-      delete Bokeh.index[id];
-    }
-
-    if (server_id !== undefined) {
-      // Clean up Bokeh references
-      var cmd = "from bokeh.io.state import curstate; print(curstate().uuid_to_server['" + server_id + "'].get_sessions()[0].document.roots[0]._id)";
-      cell.notebook.kernel.execute(cmd, {
-        iopub: {
-          output: function(msg) {
-            var element_id = msg.content.text.trim();
-            Bokeh.index[element_id].model.document.clear();
-            delete Bokeh.index[element_id];
-          }
-        }
-      });
-      // Destroy server and session
-      var cmd = "import bokeh.io.notebook as ion; ion.destroy_server('" + server_id + "')";
-      cell.notebook.kernel.execute(cmd);
-    }
-  }
-
-  /**
-   * Handle when a new output is added
-   */
-  function handleAddOutput(event, handle) {
-    var output_area = handle.output_area;
-    var output = handle.output;
-
-    // limit handleAddOutput to display_data with EXEC_MIME_TYPE content only
-    if ((output.output_type != "display_data") || (!output.data.hasOwnProperty(EXEC_MIME_TYPE))) {
-      return
-    }
-
-    var toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
-
-    if (output.metadata[EXEC_MIME_TYPE]["id"] !== undefined) {
-      toinsert[toinsert.length - 1].firstChild.textContent = output.data[JS_MIME_TYPE];
-      // store reference to embed id on output_area
-      output_area._bokeh_element_id = output.metadata[EXEC_MIME_TYPE]["id"];
-    }
-    if (output.metadata[EXEC_MIME_TYPE]["server_id"] !== undefined) {
-      var bk_div = document.createElement("div");
-      bk_div.innerHTML = output.data[HTML_MIME_TYPE];
-      var script_attrs = bk_div.children[0].attributes;
-      for (var i = 0; i < script_attrs.length; i++) {
-        toinsert[toinsert.length - 1].firstChild.setAttribute(script_attrs[i].name, script_attrs[i].value);
-      }
-      // store reference to server id on output_area
-      output_area._bokeh_server_id = output.metadata[EXEC_MIME_TYPE]["server_id"];
-    }
-  }
-
-  function register_renderer(events, OutputArea) {
-
-    function append_mime(data, metadata, element) {
-      // create a DOM node to render to
-      var toinsert = this.create_output_subarea(
-        metadata,
-        CLASS_NAME,
-        EXEC_MIME_TYPE
-      );
-      this.keyboard_manager.register_events(toinsert);
-      // Render to node
-      var props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
-      render(props, toinsert[toinsert.length - 1]);
-      element.append(toinsert);
-      return toinsert
-    }
-
-    /* Handle when an output is cleared or removed */
-    events.on('clear_output.CodeCell', handleClearOutput);
-    events.on('delete.Cell', handleClearOutput);
-
-    /* Handle when a new output is added */
-    events.on('output_added.OutputArea', handleAddOutput);
-
-    /**
-     * Register the mime type and append_mime function with output_area
-     */
-    OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
-      /* Is output safe? */
-      safe: true,
-      /* Index of renderer in `output_area.display_order` */
-      index: 0
-    });
-  }
-
-  // register the mime type if in Jupyter Notebook environment and previously unregistered
-  if (root.Jupyter !== undefined) {
-    var events = require('base/js/events');
-    var OutputArea = require('notebook/js/outputarea').OutputArea;
-
-    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
-      register_renderer(events, OutputArea);
-    }
-  }
-
-  
-  if (typeof (root._bokeh_timeout) === "undefined" || force === true) {
-    root._bokeh_timeout = Date.now() + 5000;
-    root._bokeh_failed_load = false;
-  }
-
-  var NB_LOAD_WARNING = {'data': {'text/html':
-     "<div style='background-color: #fdd'>\n"+
-     "<p>\n"+
-     "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
-     "may be due to a slow or bad network connection. Possible fixes:\n"+
-     "</p>\n"+
-     "<ul>\n"+
-     "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
-     "<li>use INLINE resources instead, as so:</li>\n"+
-     "</ul>\n"+
-     "<code>\n"+
-     "from bokeh.resources import INLINE\n"+
-     "output_notebook(resources=INLINE)\n"+
-     "</code>\n"+
-     "</div>"}};
-
-  function display_loaded() {
-    var el = document.getElementById("7670b8d2-5372-430d-94e8-438e663cee0d");
-    if (el != null) {
-      el.textContent = "BokehJS is loading...";
-    }
-    if (root.Bokeh !== undefined) {
-      if (el != null) {
-        el.textContent = "BokehJS " + root.Bokeh.version + " successfully loaded.";
-      }
-    } else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(display_loaded, 100)
-    }
-  }
-
-
-  function run_callbacks() {
-    try {
-      root._bokeh_onload_callbacks.forEach(function(callback) { callback() });
-    }
-    finally {
-      delete root._bokeh_onload_callbacks
-    }
-    console.info("Bokeh: all callbacks have finished");
-  }
-
-  function load_libs(js_urls, callback) {
-    root._bokeh_onload_callbacks.push(callback);
-    if (root._bokeh_is_loading > 0) {
-      console.log("Bokeh: BokehJS is being loaded, scheduling callback at", now());
-      return null;
-    }
-    if (js_urls == null || js_urls.length === 0) {
-      run_callbacks();
-      return null;
-    }
-    console.log("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
-    root._bokeh_is_loading = js_urls.length;
-    for (var i = 0; i < js_urls.length; i++) {
-      var url = js_urls[i];
-      var s = document.createElement('script');
-      s.src = url;
-      s.async = false;
-      s.onreadystatechange = s.onload = function() {
-        root._bokeh_is_loading--;
-        if (root._bokeh_is_loading === 0) {
-          console.log("Bokeh: all BokehJS libraries loaded");
-          run_callbacks()
-        }
-      };
-      s.onerror = function() {
-        console.warn("failed to load library " + url);
-      };
-      console.log("Bokeh: injecting script tag for BokehJS library: ", url);
-      document.getElementsByTagName("head")[0].appendChild(s);
-    }
-  };var element = document.getElementById("7670b8d2-5372-430d-94e8-438e663cee0d");
-  if (element == null) {
-    console.log("Bokeh: ERROR: autoload.js configured with elementid '7670b8d2-5372-430d-94e8-438e663cee0d' but no matching script tag was found. ")
-    return false;
-  }
-
-  var js_urls = ["https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-gl-0.12.16.min.js"];
-
-  var inline_js = [
-    function(Bokeh) {
-      Bokeh.set_log_level("info");
-    },
-    
-    function(Bokeh) {
-      
-    },
-    function(Bokeh) {
-      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css");
-      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css");
-      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.css");
-      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.css");
-      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.css");
-      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.css");
-    }
-  ];
-
-  function run_inline_js() {
-    
-    if ((root.Bokeh !== undefined) || (force === true)) {
-      for (var i = 0; i < inline_js.length; i++) {
-        inline_js[i].call(root, root.Bokeh);
-      }if (force === true) {
-        display_loaded();
-      }} else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(run_inline_js, 100);
-    } else if (!root._bokeh_failed_load) {
-      console.log("Bokeh: BokehJS failed to load within specified timeout.");
-      root._bokeh_failed_load = true;
-    } else if (force !== true) {
-      var cell = $(document.getElementById("7670b8d2-5372-430d-94e8-438e663cee0d")).parents('.cell').data().cell;
-      cell.output_area.append_execute_result(NB_LOAD_WARNING)
-    }
-
-  }
-
-  if (root._bokeh_is_loading === 0) {
-    console.log("Bokeh: BokehJS loaded, going straight to plotting");
-    run_inline_js();
-  } else {
-    load_libs(js_urls, function() {
-      console.log("Bokeh: BokehJS plotting callback run at", now());
-      run_inline_js();
-    });
-  }
-}(window));
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-
-<div class="bk-root">
-    <div class="bk-plotdiv" id="20558701-95e5-4863-8372-fc405065118a"></div>
-</div>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
-<div id="dd10f2c5-c8d6-46ee-92f8-16787a8a57fd"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#dd10f2c5-c8d6-46ee-92f8-16787a8a57fd');
-(function(root) {
-  function embed_document(root) {
-    
-  var docs_json = {"0e6b793a-5ac1-4cde-a404-21bebbba8aa1":{"roots":{"references":[{"attributes":{"formatter":{"id":"bbf69fcf-7378-4c38-9000-1c9f7bfd873a","type":"DatetimeTickFormatter"},"major_label_orientation":0.7853981633974483,"plot":{"id":"c618f238-b3f8-43f0-a0cd-b37966859ab8","subtype":"Figure","type":"Plot"},"ticker":{"id":"bd831b38-f3f8-4b4b-96d7-71388f56e98f","type":"DatetimeTicker"}},"id":"91afa7a6-ed19-4c3c-b9ae-f42d56b295ab","type":"DatetimeAxis"},{"attributes":{"source":{"id":"ad49c739-20bb-4e67-91b6-0c602f7cde43","type":"ColumnDataSource"}},"id":"383b6b60-3319-4a76-b0fa-6e6599125fcb","type":"CDSView"},{"attributes":{"months":[0,2,4,6,8,10]},"id":"3675acd8-ddf3-4597-9c0d-2f7d49ee0c1b","type":"MonthsTicker"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","x":{"field":"x"},"y":{"field":"y"}},"id":"acafd938-882d-4798-88be-8f33185bef61","type":"Line"},{"attributes":{},"id":"bd03cb9e-cb7b-489b-9065-dbcd2ca2de9a","type":"UnionRenderers"},{"attributes":{},"id":"d0018869-c1fa-497b-87d5-cb8a54cd0a75","type":"LinearScale"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"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","dtype":"float64","shape":[500]},"y":{"__ndarray__":"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","dtype":"float64","shape":[500]}},"selected":{"id":"a4a2a710-8431-4757-ba04-876befa8099e","type":"Selection"},"selection_policy":{"id":"bcdbc605-95a0-4297-88b9-470489152aa0","type":"UnionRenderers"}},"id":"4fbc831a-843b-449a-ac23-b296b513147d","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"91afa7a6-ed19-4c3c-b9ae-f42d56b295ab","type":"DatetimeAxis"}],"left":[{"id":"0f48bbb6-a9c6-401c-9270-709ae79105f4","type":"LinearAxis"}],"plot_width":1000,"renderers":[{"id":"91afa7a6-ed19-4c3c-b9ae-f42d56b295ab","type":"DatetimeAxis"},{"id":"66341cec-c4fd-49e1-8d58-51295c8eef2d","type":"Grid"},{"id":"0f48bbb6-a9c6-401c-9270-709ae79105f4","type":"LinearAxis"},{"id":"ac410fab-e8fd-4959-af64-9b67ae3c064f","type":"Grid"},{"id":"c7b4ce58-2b32-4692-9dd9-30a787a117d3","type":"BoxAnnotation"},{"id":"bc28188e-0076-4c67-82e2-53276487cb77","type":"GlyphRenderer"},{"id":"9bfa4136-21c2-492a-8da6-fc19d55e23ba","type":"Legend"},{"id":"788b5a6a-2042-48dc-bc2c-cc102e4960ff","type":"GlyphRenderer"},{"id":"79af1b36-20ec-406a-b434-9cf5ceb2fc69","type":"GlyphRenderer"},{"id":"00a08a4c-4aa6-47c1-8030-e29ba343869a","type":"GlyphRenderer"}],"title":{"id":"324e3069-2187-498b-b80f-66681e101547","type":"Title"},"toolbar":{"id":"06b97f40-d196-4f4a-bf33-91da8351f9ab","type":"Toolbar"},"x_range":{"id":"e39419f8-8389-446e-bb96-6c9b8d8e0e30","type":"DataRange1d"},"x_scale":{"id":"db55bbdb-9dc6-4429-bddc-e96d7f1611fd","type":"LinearScale"},"y_range":{"id":"c9e97a17-b906-40e9-a1ac-7cf88b3821af","type":"DataRange1d"},"y_scale":{"id":"d0018869-c1fa-497b-87d5-cb8a54cd0a75","type":"LinearScale"}},"id":"c618f238-b3f8-43f0-a0cd-b37966859ab8","subtype":"Figure","type":"Plot"},{"attributes":{"num_minor_ticks":5,"tickers":[{"id":"c3ada6cf-4b97-4971-8d02-3eae4969ada0","type":"AdaptiveTicker"},{"id":"38f0136e-2124-4a2e-aa6a-12232f6d4eb9","type":"AdaptiveTicker"},{"id":"6ff74642-8d20-49d5-8708-f07698fbdd30","type":"AdaptiveTicker"},{"id":"771e00d6-5161-431c-87d2-0e034771ca93","type":"DaysTicker"},{"id":"046f0ccf-d4c0-4dd1-8dc9-406213a8cd3c","type":"DaysTicker"},{"id":"0e3a632e-f42b-480c-b880-7fcca33c7b48","type":"DaysTicker"},{"id":"292d1da9-2d86-4445-aa39-75b849a245b7","type":"DaysTicker"},{"id":"8d9cd853-c84d-410d-b1f2-e0a7c489d3c4","type":"MonthsTicker"},{"id":"3675acd8-ddf3-4597-9c0d-2f7d49ee0c1b","type":"MonthsTicker"},{"id":"2770d673-4b42-47a4-9b15-025b476e97fd","type":"MonthsTicker"},{"id":"2df5102e-11ae-4cc7-9961-dd4548298e97","type":"MonthsTicker"},{"id":"3f3f3835-c5f2-43dd-aee6-ed1404d3145a","type":"YearsTicker"}]},"id":"bd831b38-f3f8-4b4b-96d7-71388f56e98f","type":"DatetimeTicker"},{"attributes":{"grid_line_alpha":{"value":0.3},"plot":{"id":"c618f238-b3f8-43f0-a0cd-b37966859ab8","subtype":"Figure","type":"Plot"},"ticker":{"id":"bd831b38-f3f8-4b4b-96d7-71388f56e98f","type":"DatetimeTicker"}},"id":"66341cec-c4fd-49e1-8d58-51295c8eef2d","type":"Grid"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"1dc4111e-ec0b-42c8-939f-9daa5cb4db50","type":"PanTool"},{"id":"67e05874-a71e-4314-b05b-efd0d86f1fbb","type":"WheelZoomTool"},{"id":"93fb2fb4-5210-47ec-8c2b-46dc6fd736d2","type":"BoxZoomTool"},{"id":"ccb3b02c-de15-45f1-867a-7caaa955bc75","type":"ResetTool"},{"id":"a64b5d22-7133-4f78-b594-c3c9a9d3d35c","type":"SaveTool"}]},"id":"06b97f40-d196-4f4a-bf33-91da8351f9ab","type":"Toolbar"},{"attributes":{"x":{"field":"x"},"y":{"field":"y"}},"id":"1206d541-c744-42d2-aa53-58b1075d4705","type":"Line"},{"attributes":{"click_policy":"mute","items":[{"id":"cfc62ccf-f9c1-45f6-97e4-8b829b42bfa0","type":"LegendItem"},{"id":"838e06c8-4f9f-4b5a-9be0-c346774e4523","type":"LegendItem"},{"id":"dec3ee01-fe1d-4abe-8eca-6107bbac7518","type":"LegendItem"}],"location":"top_left","plot":{"id":"c618f238-b3f8-43f0-a0cd-b37966859ab8","subtype":"Figure","type":"Plot"}},"id":"9bfa4136-21c2-492a-8da6-fc19d55e23ba","type":"Legend"},{"attributes":{"plot":null,"text":"Bbands Chart"},"id":"324e3069-2187-498b-b80f-66681e101547","type":"Title"},{"attributes":{},"id":"a346718d-a443-4bcd-a9da-9b39306e450d","type":"Selection"},{"attributes":{},"id":"031a22ba-ea08-47fd-bf45-ac57196cbb37","type":"BasicTickFormatter"},{"attributes":{},"id":"7a60dae9-31be-40ca-914e-fd2e69139512","type":"Selection"},{"attributes":{},"id":"e5d26784-6323-482d-8cf7-1e50bb24fbcc","type":"UnionRenderers"},{"attributes":{"source":{"id":"4fbc831a-843b-449a-ac23-b296b513147d","type":"ColumnDataSource"}},"id":"5f82e0fc-ba74-484b-a6d4-b209e3cbede7","type":"CDSView"},{"attributes":{"data_source":{"id":"4fbc831a-843b-449a-ac23-b296b513147d","type":"ColumnDataSource"},"glyph":{"id":"75ca365e-09b2-41cd-b151-0ad63b859f22","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"fa20ad58-fc1a-413f-b18a-546c159d597d","type":"Line"},"nonselection_glyph":{"id":"36838680-02af-42f1-af74-76e82697ac04","type":"Line"},"selection_glyph":null,"view":{"id":"5f82e0fc-ba74-484b-a6d4-b209e3cbede7","type":"CDSView"}},"id":"79af1b36-20ec-406a-b434-9cf5ceb2fc69","type":"GlyphRenderer"},{"attributes":{},"id":"8ac634f6-fd14-4817-b8f9-288d44a90d01","type":"Selection"},{"attributes":{"label":{"value":"30 Day MA"},"renderers":[{"id":"788b5a6a-2042-48dc-bc2c-cc102e4960ff","type":"GlyphRenderer"}]},"id":"cfc62ccf-f9c1-45f6-97e4-8b829b42bfa0","type":"LegendItem"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","x":{"field":"x"},"y":{"field":"y"}},"id":"36838680-02af-42f1-af74-76e82697ac04","type":"Line"},{"attributes":{},"id":"db55bbdb-9dc6-4429-bddc-e96d7f1611fd","type":"LinearScale"},{"attributes":{"callback":null},"id":"e39419f8-8389-446e-bb96-6c9b8d8e0e30","type":"DataRange1d"},{"attributes":{"callback":null},"id":"c9e97a17-b906-40e9-a1ac-7cf88b3821af","type":"DataRange1d"},{"attributes":{"source":{"id":"4f09e99e-ab93-45af-ad5b-18704b4d70c9","type":"ColumnDataSource"}},"id":"86ab2c0b-7f1f-4db4-ab4c-0d7bdfca3fcc","type":"CDSView"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"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","dtype":"float64","shape":[500]},"y":{"__ndarray__":"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","dtype":"float64","shape":[500]}},"selected":{"id":"7a60dae9-31be-40ca-914e-fd2e69139512","type":"Selection"},"selection_policy":{"id":"bd03cb9e-cb7b-489b-9065-dbcd2ca2de9a","type":"UnionRenderers"}},"id":"ad49c739-20bb-4e67-91b6-0c602f7cde43","type":"ColumnDataSource"},{"attributes":{"days":[1,15]},"id":"292d1da9-2d86-4445-aa39-75b849a245b7","type":"DaysTicker"},{"attributes":{"line_alpha":0.2,"line_color":"#1f77b4","x":{"field":"x"},"y":{"field":"y"}},"id":"af47ecbf-f503-4590-82eb-57429b123587","type":"Line"},{"attributes":{"days":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]},"id":"771e00d6-5161-431c-87d2-0e034771ca93","type":"DaysTicker"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","x":{"field":"x"},"y":{"field":"y"}},"id":"58122e01-4b48-4fe6-aaf0-21e6b45a9bf1","type":"Line"},{"attributes":{"months":[0,1,2,3,4,5,6,7,8,9,10,11]},"id":"8d9cd853-c84d-410d-b1f2-e0a7c489d3c4","type":"MonthsTicker"},{"attributes":{"months":[0,4,8]},"id":"2770d673-4b42-47a4-9b15-025b476e97fd","type":"MonthsTicker"},{"attributes":{"days":[1,8,15,22]},"id":"0e3a632e-f42b-480c-b880-7fcca33c7b48","type":"DaysTicker"},{"attributes":{},"id":"51e2685c-12ef-4c94-9e8b-a4f97168c174","type":"BasicTicker"},{"attributes":{"dimension":1,"grid_line_alpha":{"value":0.3},"plot":{"id":"c618f238-b3f8-43f0-a0cd-b37966859ab8","subtype":"Figure","type":"Plot"},"ticker":{"id":"51e2685c-12ef-4c94-9e8b-a4f97168c174","type":"BasicTicker"}},"id":"ac410fab-e8fd-4959-af64-9b67ae3c064f","type":"Grid"},{"attributes":{"formatter":{"id":"031a22ba-ea08-47fd-bf45-ac57196cbb37","type":"BasicTickFormatter"},"plot":{"id":"c618f238-b3f8-43f0-a0cd-b37966859ab8","subtype":"Figure","type":"Plot"},"ticker":{"id":"51e2685c-12ef-4c94-9e8b-a4f97168c174","type":"BasicTicker"}},"id":"0f48bbb6-a9c6-401c-9270-709ae79105f4","type":"LinearAxis"},{"attributes":{"line_alpha":0.2,"line_color":"#1f77b4","x":{"field":"x"},"y":{"field":"y"}},"id":"fa20ad58-fc1a-413f-b18a-546c159d597d","type":"Line"},{"attributes":{"data_source":{"id":"4f09e99e-ab93-45af-ad5b-18704b4d70c9","type":"ColumnDataSource"},"glyph":{"id":"f822b21f-b990-4f4a-b67e-14f78487fc3e","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"2d3b06f8-0742-4829-b00a-41286d71263f","type":"Line"},"nonselection_glyph":{"id":"e50ae597-8ee9-4d94-8fb0-fbf337d26400","type":"Line"},"selection_glyph":null,"view":{"id":"86ab2c0b-7f1f-4db4-ab4c-0d7bdfca3fcc","type":"CDSView"}},"id":"788b5a6a-2042-48dc-bc2c-cc102e4960ff","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Upper Band"},"renderers":[{"id":"79af1b36-20ec-406a-b434-9cf5ceb2fc69","type":"GlyphRenderer"}]},"id":"838e06c8-4f9f-4b5a-9be0-c346774e4523","type":"LegendItem"},{"attributes":{"line_alpha":0.2,"line_color":"#1f77b4","x":{"field":"x"},"y":{"field":"y"}},"id":"2d3b06f8-0742-4829-b00a-41286d71263f","type":"Line"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"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","dtype":"float64","shape":[500]},"y":{"__ndarray__":"AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H8AAAAAAAD4fwAAAAAAAPh/AAAAAAAA+H9ebAVIrperQBmDHlL5N6tAmN0kU2ghq0Cao1EWzkGrQMaOLf4zpatABuvC1OX1q0B4Jk4oQHqsQJJYwmLtB61AmvJYg8A7rUCGqiNfd5utQBr5AH0cMq5A9jfxxOsPr0DM3hIWFSqwQGJbBcoI0bBAa8bE2nJ9sUBMw9tpqj6yQLb02Ler4bJAhDNbffZks0CyvZNKzRS0QJAPIu2pu7RA6eFos6KItECIUAK/CSW0QC+FEjrlyrNAOcvnYdB8s0DTqJw+vVWzQFxccv+zirNATICR3G7Xs0CW1Uj0agW0QNi3EbsJJ7RAmmvFBC5PtEDiXzmQDHG0QJ9l92zUYLRAt4JAbJrutEBL2wOFyGC1QF6NWfTMt7VAC1beqRT1tUDBi62X8Hy2QD+ULoX5t7ZAjmadrJr2tkAaXLl81v22QGKF7kUyArdA91qqKNTztkB7eXmaiPi2QMUoUFbt7bZAfrNPoO22tkB8arTu5YG2QFf1eDITHrZASdRQmsq1tUBwq+AeV7O1QCJOvWNTIbZAPJ4MsBqCtkCY09ipEJ23QP2vx/hrTLhAOimswyABuUApTMP1pG25QCVoFvCxf7hAvIIOO7mxtUDGigxLTvi0QOOi+DTna7VAsLl9snEJtkDjUr8hw1W2QBfImCwNPrdAWIOSzmzfuEDzYJpi1sO6QK9J4PZnPbxA4qnwSKgyvUDKsYGEFoa+QPJj4HmqGsBAsgU62RR7wUC9PEPcYQzDQGKglK6ZU8RAXuktFapExUAKUQ6edSPGQLZ9eLrP7cZArGZJQG3Kx0DQ6trlMVPIQFUHzEnXN8hAsDSOQCfhx0AHJ/Dgas/HQLhhdKcjAcdAo3vH1fmRxkBWD8cKIRXGQBS/Cqbp8MVAjtzw9HrXxUDaxDUasdzFQA4Az1emUcZAFEU8c3TCxkCBUu58JGvHQHDk3fFYpsdAonUGbwKzx0C4CIl2u7LHQGugs1ebq8dAiNPNSSnLx0AK25IUOfXHQO0vDeQi5cdAFD+C0VSxx0BZOxr7b1zGQFuWbh/OVsVAs2sy7JBsxEDIAn1ZtRvEQEnHxXOU88NAtib2zzp9w0ABMIoYWbTCQPQM+qbJCcJAGjNr9g+kwUCZ8ZQddqvBQAExMUI3+MFAbMChbXpMwkCPFdGcc3fCQDsg1E/desJA7V7DSW9+wkDEa0fibzPCQA48OqJgrsFAiHknZ0FZwUBaTX4M4B3BQGEyBjlwmcBA2D+dyFQ2vkD0BH5rT4K8QBbAo/JU/LpATotJWMPWuUCEpu/uyea5QL8+7o/IjrlA7+U/DATpuEDXyDbeZbu4QHgegVYSo7hA1ipy41vTuECORVJTig65QIZyhQMMg7lACsab1qMGukCbaCp7KGu6QBmbxStbC7pAvOzK9V6zuUDti9kQRqe5QJ65dy1uyLlA8MZrcqDUuUCcLeIbiUi6QDjrdXdKybtAKsiLMPnPvECgD+zAWAu+QHcx+N0xVb9AiI28debfv0B6Rn8jEVLAQGxwZxT3/8BAYPwEOZFVwUCItwsMHAPCQB5IW1i6VcJARu45kXtOwkA1v7IL9PnBQLZ4lIMkmsFA3eMtIg4VwUAknosiWu3AQDry6QxSr8BANZWFzZdxwECBTCnlQ8C/QDStSL4FwL5Agv08w0H0vUCUYXiw8+W8QOinWq+qIrxAykYGX8y3u0CJquwaH3m7QKW4s/M/YLtA7pnpw39Zu0BN5wO1VMS7QPqw4rSXYrxAAD5SH71pvUB91vc/YQC+QOjMhi123b1AFYcCLkqdvUDPej6FAJu8QI6mei+ocrtAtSwnhYPSukCsjdYC5xa6QKZL1e7RuLlALwIoAjl7uUD0Y0hOB924QPUbocxVTLhA30AKatOzt0CycviUO1S3QKdqI1nmILdAGF4Dquv/tkCYWGgVoAW3QMzW3TVaI7dAD/zXiouet0CqajJzne63QPZaflBTM7hAnHriDG8RuEDKaBAUFvu3QP5TeroWALhAWPCRvRbut0AZel3Udf23QFodIbTmyrdAnJ3AhXzJt0C2VIE/vda3QM++YKRmxLdAd2GcmLvGt0DGd5F2xkq4QNLDlR/e9LhAhHMYHhabuUBcLWdPvCq6QF5S7FfxFrtA0nZh0r82vEAZD2dqYn+9QHE3sB3s471AjW5IfdY9vkD5qGFiiJ++QE7roupGxL5AyO5ef15Nv0AukiYAGxrAQMJuABgEc8BAq6nVkbTPwECjrpMjV9vAQB1ZfJMPn8BAWsITCux7wEAwOkwspWfAQAHgu2kZScBA/DN7ZxgmwEDsXOupi9a/QI5UAq+kPL9A2iKIu/DRvkDN+sOymXW+QI/3ykobTL5AiHlSSMEUvkB9qHHYkKG9QP06483V/7xAOi/DWxaUvEDYyTzEUU+8QNbS3lch/LtA6lhasWGnu0DscUPvxCi7QJH5xVxYK7tAWYFxY4MQu0D1dayzl+C6QDDlZSavwbpAwvDj8J7PukCiXlb5E/K6QBWyCqRb9LpArXnkq3cAu0DED8h4v/26QBbyjaMzELtANb06VMwlu0BuTTRVdoi7QGQf04cnVLtANZZvVFYLu0C2CSdixU+6QH+BIL7ic7lA7q/pLuAVuUBpJo+bWI+4QEAlMoH8LLhACu2+dUjXt0ARYb9c8qm3QAyaZJBZhLdAnHILmJdnt0B8J40KXU23QNCIwOSA1LZAOU+Y5ceRtkA8+EMEyEu2QAxJUo3eObZAVMZNAZUotkCKUCTA4kq2QBr6BKKSU7ZAi0c/KMW0tkCPezlN8rm2QJyPpJvWzrZA3tQFOCTMtkDwafLduNS2QHBP5GrD1rZARmkj5HvZtkBFzgkd+9e2QKMxPp6Jz7ZAhCBVd4/PtkC/dNDlZNS2QMy0wn3p1bZAqk4S60zdtkAP/YMCnvq2QOiQFFc0A7dAOsw2ukASt0ADgUjY+Bq3QONrCMVYPbdAfPb9Vo/3tkCPIYLJ4A+3QESos0xq8bZANvkQTZvntkCqOIiBWuq2QBM3UsA037ZAecukE8rCtkBify2bCkO2QFAMj3ywJrZApmut9II2tkDtkO6xiSy2QBzYezf5NrZAHvKWAgNbtkAhDlKcTtC2QFXz0ewIV7dAZABNBGkJuEDishVYd9u4QGyxyFw+vblAKyZ92lpnukBccI/5GbC6QD5sfYy1arpAmh4rBczxuUAdPJmosw65QCZ2RMHvjrhAjbHKxkS+t0C/KpPqLxq3QPCfsgTPjbZAymZ1Oy4ttkA+PLWSGcq1QLUwoSxReLVA+ebVVx9btUBCm0UN5H+1QOzBBGhbsLVAh+XjLdkTtkBION3MXDK2QCQpGgSIcrZALoYLwUm8tkAEByU5oiS3QDpwWM/TSLdAG/tGrw11t0BJCe44JJm3QH+kqHnoe7dA3cLMWBJQt0D2W/9c8S23QNMgPDXqSLdAlE/Yj5Jdt0BSN1Arz1q3QLfk57LzZLdAUPkLKGCSt0AI8lbjwLW3QGmn8vy86rdAnXzMNArit0AfVmgVXuO3QJcrK2l9rLdA1Vlog6qrt0DysWJ+x5C3QO2CTPcwhbdAY8vfooxqt0DXUZK2rle3QGviv4ATQbdAIRDPT4gxt0Cckmnq5xu3QO8bxEWb7LZAW83T0s3PtkAyuzyHFr22QIB0vlDMubZAlAB5VtHXtkC+/7aNCxG3QGV6wStGVbdA/AeZ2Cnnt0BOG2J7ne23QDwZr3yF7LdAfVRANnTqt0Dy4yXvtBK4QCJpunXOM7hACA1neRRMuECGVdt2Q2y4QLLI70m4hLhAbs+3H6CGuEAemJmVaY24QNwcZb0ckbhAClZWyAyWuECoJ5ovf9O4QK7DosPQ/7hALkVt908kuUA10QZI3jO5QA17/ku85LhAWl0wQSS1uECetAxPdpa4QMqhailjerhAjJSAuaZ8uECiRmn09n+4QFQuSbUmfbhATIfUNQJ9uEBvlZC0cnm4QI6S2TS2eLhAsh+ZkDh4uEBrKaXGX3u4QEGLryeZfrhAcI0Jw3R9uEB1NME7jHm4QKBHfrcTd7hAgP7ZWg9yuEB1l43wcG24QAWJcPonVrhAex73dw0/uEDwc7kML1a4QJTj9xfJabhAcgKJoSd6uEAntL+hAIO4QPjLkS9ki7hArfmRz7WZuECLTOxIUK+4QL/6/+uvsrhAchwilTKxuEDZ5lKVRq24QPDAeH0GrbhAJLGR0jevuEC6G4xvSrC4QNbpQgUWtLhAKSyRypsMuEB4+07Nm2S3QGYz398/yrZA9v62AAxJtkBjBIZv7Oa1QB1iKn34tLRAXEndfdBas0DRLnT8HGayQA511KqPT7FAaICLiuBxsEDGkZsGGIyuQNNFKrVs3axA0k6uGKMeq0BVYMi5yb+pQCiJQqdhHqlAAJfbYPivqEDcNc6AwjKoQDyYrCLrKahAVO4B+o1rqEDrzcPMTs6oQGEox9Fi7qhAb5Za5rvvqEAlbr3p4seoQMBt9Sp+1ahAVsfbxvyYqUCwH62FT5qpQPppCWgIM6lA7Ava/43+qEDiDr+gj7moQI+XKUsvaqhAj32Z5ePPp0AgY/ASrU6nQBzbWLtF2qZAg5OXEsm6pkBDR6+8qe6mQMv3lLgERadA+CgdaE5Dp0BW8Ihq4oqnQEmbUzyHxKdAzjwJk8+8p0DSbO/sY7CnQFes2KZ1sadASTsyyt++p0BV4gHPitynQCqJIIBxAKhAlPkz6kAPqEDe3XR6RDioQC9dzczSc6hAY3Y84rejqECw52iOSA2pQELy2ukBr6lAdqiVAfh6qkCphg2cJnOrQPluV2DiyKtAQ1H8PAnrq0AoMckabxSsQL8sSDrWJKxAuv5WK7/Yq0D3oUAR8p+rQFynCF56Z6tAiCdA7nsYq0Ac9hiJDgCrQP/rXpJEz6pA1TCW5APXqkC7r0yVxbyqQHtDEG/9pqpAXuv0846aqkC7DMy4RXWqQLmnJMJcSqpAbvwZ1uw0qkCr0j7WjhmqQCYklvULBqpAdqcW6H7zqUCwh780sBOqQDNl9TyORKpAlaXfW8RrqkBaa6hVINqqQPG+wq/hvqpAAbw38+idqkD+26yp9oqqQAOz3rzQkapAduhTTnCEqkDLgU8EnnaqQA==","dtype":"float64","shape":[500]}},"selected":{"id":"a346718d-a443-4bcd-a9da-9b39306e450d","type":"Selection"},"selection_policy":{"id":"1ce67494-6ac9-40d8-b7fc-ce7027837630","type":"UnionRenderers"}},"id":"75308d38-2961-4db7-ba4c-b72f4c2a1c72","type":"ColumnDataSource"},{"attributes":{},"id":"a64b5d22-7133-4f78-b594-c3c9a9d3d35c","type":"SaveTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"c7b4ce58-2b32-4692-9dd9-30a787a117d3","type":"BoxAnnotation"},{"attributes":{},"id":"67e05874-a71e-4314-b05b-efd0d86f1fbb","type":"WheelZoomTool"},{"attributes":{},"id":"1dc4111e-ec0b-42c8-939f-9daa5cb4db50","type":"PanTool"},{"attributes":{"line_color":"blue","x":{"field":"x"},"y":{"field":"y"}},"id":"75ca365e-09b2-41cd-b151-0ad63b859f22","type":"Line"},{"attributes":{"days":[1,4,7,10,13,16,19,22,25,28]},"id":"046f0ccf-d4c0-4dd1-8dc9-406213a8cd3c","type":"DaysTicker"},{"attributes":{"base":24,"mantissas":[1,2,4,6,8,12],"max_interval":43200000.0,"min_interval":3600000.0,"num_minor_ticks":0},"id":"6ff74642-8d20-49d5-8708-f07698fbdd30","type":"AdaptiveTicker"},{"attributes":{"data_source":{"id":"75308d38-2961-4db7-ba4c-b72f4c2a1c72","type":"ColumnDataSource"},"glyph":{"id":"3830651d-dc24-47a5-9de5-fa5b40360cf9","type":"Line"},"hover_glyph":null,"muted_glyph":{"id":"af47ecbf-f503-4590-82eb-57429b123587","type":"Line"},"nonselection_glyph":{"id":"58122e01-4b48-4fe6-aaf0-21e6b45a9bf1","type":"Line"},"selection_glyph":null,"view":{"id":"6dbe2550-5206-46bb-ba5c-f9ec772d5729","type":"CDSView"}},"id":"00a08a4c-4aa6-47c1-8030-e29ba343869a","type":"GlyphRenderer"},{"attributes":{"line_color":"green","x":{"field":"x"},"y":{"field":"y"}},"id":"3830651d-dc24-47a5-9de5-fa5b40360cf9","type":"Line"},{"attributes":{"label":{"value":"Lower Band"},"renderers":[{"id":"00a08a4c-4aa6-47c1-8030-e29ba343869a","type":"GlyphRenderer"}]},"id":"dec3ee01-fe1d-4abe-8eca-6107bbac7518","type":"LegendItem"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","x":{"field":"x"},"y":{"field":"y"}},"id":"e50ae597-8ee9-4d94-8fb0-fbf337d26400","type":"Line"},{"attributes":{"data_source":{"id":"ad49c739-20bb-4e67-91b6-0c602f7cde43","type":"ColumnDataSource"},"glyph":{"id":"1206d541-c744-42d2-aa53-58b1075d4705","type":"Line"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"acafd938-882d-4798-88be-8f33185bef61","type":"Line"},"selection_glyph":null,"view":{"id":"383b6b60-3319-4a76-b0fa-6e6599125fcb","type":"CDSView"}},"id":"bc28188e-0076-4c67-82e2-53276487cb77","type":"GlyphRenderer"},{"attributes":{"source":{"id":"75308d38-2961-4db7-ba4c-b72f4c2a1c72","type":"ColumnDataSource"}},"id":"6dbe2550-5206-46bb-ba5c-f9ec772d5729","type":"CDSView"},{"attributes":{"mantissas":[1,2,5],"max_interval":500.0,"num_minor_ticks":0},"id":"c3ada6cf-4b97-4971-8d02-3eae4969ada0","type":"AdaptiveTicker"},{"attributes":{},"id":"a4a2a710-8431-4757-ba04-876befa8099e","type":"Selection"},{"attributes":{},"id":"bcdbc605-95a0-4297-88b9-470489152aa0","type":"UnionRenderers"},{"attributes":{"overlay":{"id":"c7b4ce58-2b32-4692-9dd9-30a787a117d3","type":"BoxAnnotation"}},"id":"93fb2fb4-5210-47ec-8c2b-46dc6fd736d2","type":"BoxZoomTool"},{"attributes":{},"id":"ccb3b02c-de15-45f1-867a-7caaa955bc75","type":"ResetTool"},{"attributes":{},"id":"1ce67494-6ac9-40d8-b7fc-ce7027837630","type":"UnionRenderers"},{"attributes":{"months":[0,6]},"id":"2df5102e-11ae-4cc7-9961-dd4548298e97","type":"MonthsTicker"},{"attributes":{},"id":"bbf69fcf-7378-4c38-9000-1c9f7bfd873a","type":"DatetimeTickFormatter"},{"attributes":{"line_color":"red","x":{"field":"x"},"y":{"field":"y"}},"id":"f822b21f-b990-4f4a-b67e-14f78487fc3e","type":"Line"},{"attributes":{"base":60,"mantissas":[1,2,5,10,15,20,30],"max_interval":1800000.0,"min_interval":1000.0,"num_minor_ticks":0},"id":"38f0136e-2124-4a2e-aa6a-12232f6d4eb9","type":"AdaptiveTicker"},{"attributes":{},"id":"3f3f3835-c5f2-43dd-aee6-ed1404d3145a","type":"YearsTicker"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"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","dtype":"float64","shape":[500]},"y":{"__ndarray__":"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","dtype":"float64","shape":[500]}},"selected":{"id":"8ac634f6-fd14-4817-b8f9-288d44a90d01","type":"Selection"},"selection_policy":{"id":"e5d26784-6323-482d-8cf7-1e50bb24fbcc","type":"UnionRenderers"}},"id":"4f09e99e-ab93-45af-ad5b-18704b4d70c9","type":"ColumnDataSource"}],"root_ids":["c618f238-b3f8-43f0-a0cd-b37966859ab8"]},"title":"Bokeh Application","version":"0.12.16"}};
-  var render_items = [{"docid":"0e6b793a-5ac1-4cde-a404-21bebbba8aa1","elementid":"20558701-95e5-4863-8372-fc405065118a","modelid":"c618f238-b3f8-43f0-a0cd-b37966859ab8"}];
-  root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
-
-  }
-  if (root.Bokeh !== undefined) {
-    embed_document(root);
-  } else {
-    var attempts = 0;
-    var timer = setInterval(function(root) {
-      if (root.Bokeh !== undefined) {
-        embed_document(root);
-        clearInterval(timer);
-      }
-      attempts++;
-      if (attempts > 100) {
-        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
-        clearInterval(timer);
-      }
-    }, 10, root)
-  }
-})(window);
-</script>
-</div>
-
 </div>
 
 </div>
@@ -13039,14 +12702,14 @@ var element = $('#dd10f2c5-c8d6-46ee-92f8-16787a8a57fd');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Cross">Cross<a class="anchor-link" href="#Cross">&#182;</a></h1><p>Outro ponto importante é a possibilidade de adicionar uma interpretação as bandas extraindo mais um sinal delas, são os pontos de cruzamento da linha do fechamento (close) com as bandas superiores e inferiores.</p>
+<h1 id="Cross">Cross<a class="anchor-link" href="#Cross">&#182;</a></h1><p>Outro ponto importante é a possibilidade de adicionar uma interpretação das bandas extraindo mais um sinal delas. São os pontos de cruzamento da linha do fechamento (close) com as bandas superiores e inferiores.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bands</span><span class="o">.</span><span class="n">plot_cross_points</span><span class="p">()</span>
@@ -13065,326 +12728,15 @@ var element = $('#dd10f2c5-c8d6-46ee-92f8-16787a8a57fd');
 <div class="prompt"></div>
 
 
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-99f85779a310&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>bands<span class="ansi-blue-fg">.</span>plot_cross_points<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<div class="output_html rendered_html output_subarea ">
-
-    <div class="bk-root">
-        <a href="https://bokeh.pydata.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
-        <span id="3f2a664e-ecf7-44a6-beb1-e1161e58cf59">Loading BokehJS ...</span>
-    </div>
+<span class="ansi-red-fg">NameError</span>: name &#39;bands&#39; is not defined</pre>
 </div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
-<div id="6a5c7245-d5ec-4b90-b039-0b41d3213904"></div>
-<div class="output_subarea output_javascript ">
-<script type="text/javascript">
-var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
-
-(function(root) {
-  function now() {
-    return new Date();
-  }
-
-  var force = true;
-
-  if (typeof (root._bokeh_onload_callbacks) === "undefined" || force === true) {
-    root._bokeh_onload_callbacks = [];
-    root._bokeh_is_loading = undefined;
-  }
-
-  var JS_MIME_TYPE = 'application/javascript';
-  var HTML_MIME_TYPE = 'text/html';
-  var EXEC_MIME_TYPE = 'application/vnd.bokehjs_exec.v0+json';
-  var CLASS_NAME = 'output_bokeh rendered_html';
-
-  /**
-   * Render data to the DOM node
-   */
-  function render(props, node) {
-    var script = document.createElement("script");
-    node.appendChild(script);
-  }
-
-  /**
-   * Handle when an output is cleared or removed
-   */
-  function handleClearOutput(event, handle) {
-    var cell = handle.cell;
-
-    var id = cell.output_area._bokeh_element_id;
-    var server_id = cell.output_area._bokeh_server_id;
-    // Clean up Bokeh references
-    if (id !== undefined) {
-      Bokeh.index[id].model.document.clear();
-      delete Bokeh.index[id];
-    }
-
-    if (server_id !== undefined) {
-      // Clean up Bokeh references
-      var cmd = "from bokeh.io.state import curstate; print(curstate().uuid_to_server['" + server_id + "'].get_sessions()[0].document.roots[0]._id)";
-      cell.notebook.kernel.execute(cmd, {
-        iopub: {
-          output: function(msg) {
-            var element_id = msg.content.text.trim();
-            Bokeh.index[element_id].model.document.clear();
-            delete Bokeh.index[element_id];
-          }
-        }
-      });
-      // Destroy server and session
-      var cmd = "import bokeh.io.notebook as ion; ion.destroy_server('" + server_id + "')";
-      cell.notebook.kernel.execute(cmd);
-    }
-  }
-
-  /**
-   * Handle when a new output is added
-   */
-  function handleAddOutput(event, handle) {
-    var output_area = handle.output_area;
-    var output = handle.output;
-
-    // limit handleAddOutput to display_data with EXEC_MIME_TYPE content only
-    if ((output.output_type != "display_data") || (!output.data.hasOwnProperty(EXEC_MIME_TYPE))) {
-      return
-    }
-
-    var toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
-
-    if (output.metadata[EXEC_MIME_TYPE]["id"] !== undefined) {
-      toinsert[toinsert.length - 1].firstChild.textContent = output.data[JS_MIME_TYPE];
-      // store reference to embed id on output_area
-      output_area._bokeh_element_id = output.metadata[EXEC_MIME_TYPE]["id"];
-    }
-    if (output.metadata[EXEC_MIME_TYPE]["server_id"] !== undefined) {
-      var bk_div = document.createElement("div");
-      bk_div.innerHTML = output.data[HTML_MIME_TYPE];
-      var script_attrs = bk_div.children[0].attributes;
-      for (var i = 0; i < script_attrs.length; i++) {
-        toinsert[toinsert.length - 1].firstChild.setAttribute(script_attrs[i].name, script_attrs[i].value);
-      }
-      // store reference to server id on output_area
-      output_area._bokeh_server_id = output.metadata[EXEC_MIME_TYPE]["server_id"];
-    }
-  }
-
-  function register_renderer(events, OutputArea) {
-
-    function append_mime(data, metadata, element) {
-      // create a DOM node to render to
-      var toinsert = this.create_output_subarea(
-        metadata,
-        CLASS_NAME,
-        EXEC_MIME_TYPE
-      );
-      this.keyboard_manager.register_events(toinsert);
-      // Render to node
-      var props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
-      render(props, toinsert[toinsert.length - 1]);
-      element.append(toinsert);
-      return toinsert
-    }
-
-    /* Handle when an output is cleared or removed */
-    events.on('clear_output.CodeCell', handleClearOutput);
-    events.on('delete.Cell', handleClearOutput);
-
-    /* Handle when a new output is added */
-    events.on('output_added.OutputArea', handleAddOutput);
-
-    /**
-     * Register the mime type and append_mime function with output_area
-     */
-    OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
-      /* Is output safe? */
-      safe: true,
-      /* Index of renderer in `output_area.display_order` */
-      index: 0
-    });
-  }
-
-  // register the mime type if in Jupyter Notebook environment and previously unregistered
-  if (root.Jupyter !== undefined) {
-    var events = require('base/js/events');
-    var OutputArea = require('notebook/js/outputarea').OutputArea;
-
-    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
-      register_renderer(events, OutputArea);
-    }
-  }
-
-  
-  if (typeof (root._bokeh_timeout) === "undefined" || force === true) {
-    root._bokeh_timeout = Date.now() + 5000;
-    root._bokeh_failed_load = false;
-  }
-
-  var NB_LOAD_WARNING = {'data': {'text/html':
-     "<div style='background-color: #fdd'>\n"+
-     "<p>\n"+
-     "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
-     "may be due to a slow or bad network connection. Possible fixes:\n"+
-     "</p>\n"+
-     "<ul>\n"+
-     "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
-     "<li>use INLINE resources instead, as so:</li>\n"+
-     "</ul>\n"+
-     "<code>\n"+
-     "from bokeh.resources import INLINE\n"+
-     "output_notebook(resources=INLINE)\n"+
-     "</code>\n"+
-     "</div>"}};
-
-  function display_loaded() {
-    var el = document.getElementById("3f2a664e-ecf7-44a6-beb1-e1161e58cf59");
-    if (el != null) {
-      el.textContent = "BokehJS is loading...";
-    }
-    if (root.Bokeh !== undefined) {
-      if (el != null) {
-        el.textContent = "BokehJS " + root.Bokeh.version + " successfully loaded.";
-      }
-    } else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(display_loaded, 100)
-    }
-  }
-
-
-  function run_callbacks() {
-    try {
-      root._bokeh_onload_callbacks.forEach(function(callback) { callback() });
-    }
-    finally {
-      delete root._bokeh_onload_callbacks
-    }
-    console.info("Bokeh: all callbacks have finished");
-  }
-
-  function load_libs(js_urls, callback) {
-    root._bokeh_onload_callbacks.push(callback);
-    if (root._bokeh_is_loading > 0) {
-      console.log("Bokeh: BokehJS is being loaded, scheduling callback at", now());
-      return null;
-    }
-    if (js_urls == null || js_urls.length === 0) {
-      run_callbacks();
-      return null;
-    }
-    console.log("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
-    root._bokeh_is_loading = js_urls.length;
-    for (var i = 0; i < js_urls.length; i++) {
-      var url = js_urls[i];
-      var s = document.createElement('script');
-      s.src = url;
-      s.async = false;
-      s.onreadystatechange = s.onload = function() {
-        root._bokeh_is_loading--;
-        if (root._bokeh_is_loading === 0) {
-          console.log("Bokeh: all BokehJS libraries loaded");
-          run_callbacks()
-        }
-      };
-      s.onerror = function() {
-        console.warn("failed to load library " + url);
-      };
-      console.log("Bokeh: injecting script tag for BokehJS library: ", url);
-      document.getElementsByTagName("head")[0].appendChild(s);
-    }
-  };var element = document.getElementById("3f2a664e-ecf7-44a6-beb1-e1161e58cf59");
-  if (element == null) {
-    console.log("Bokeh: ERROR: autoload.js configured with elementid '3f2a664e-ecf7-44a6-beb1-e1161e58cf59' but no matching script tag was found. ")
-    return false;
-  }
-
-  var js_urls = ["https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-gl-0.12.16.min.js"];
-
-  var inline_js = [
-    function(Bokeh) {
-      Bokeh.set_log_level("info");
-    },
-    
-    function(Bokeh) {
-      
-    },
-    function(Bokeh) {
-      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css");
-      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css");
-      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.css");
-      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.16.min.css");
-      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.css");
-      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.16.min.css");
-    }
-  ];
-
-  function run_inline_js() {
-    
-    if ((root.Bokeh !== undefined) || (force === true)) {
-      for (var i = 0; i < inline_js.length; i++) {
-        inline_js[i].call(root, root.Bokeh);
-      }if (force === true) {
-        display_loaded();
-      }} else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(run_inline_js, 100);
-    } else if (!root._bokeh_failed_load) {
-      console.log("Bokeh: BokehJS failed to load within specified timeout.");
-      root._bokeh_failed_load = true;
-    } else if (force !== true) {
-      var cell = $(document.getElementById("3f2a664e-ecf7-44a6-beb1-e1161e58cf59")).parents('.cell').data().cell;
-      cell.output_area.append_execute_result(NB_LOAD_WARNING)
-    }
-
-  }
-
-  if (root._bokeh_is_loading === 0) {
-    console.log("Bokeh: BokehJS loaded, going straight to plotting");
-    run_inline_js();
-  } else {
-    load_libs(js_urls, function() {
-      console.log("Bokeh: BokehJS plotting callback run at", now());
-      run_inline_js();
-    });
-  }
-}(window));
-</script>
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[10]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div style="display: table;"><div style="display: table-row;"><div style="display: table-cell;"><b title="bokeh.plotting.figure.Figure">Figure</b>(</div><div style="display: table-cell;">id&nbsp;=&nbsp;'a5620bc8-700f-4b3f-8af9-56c4dddfb092', <span id="b56d0327-dd35-436c-b03a-222ed95aced8" style="cursor: pointer;">&hellip;)</span></div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">above&nbsp;=&nbsp;[],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">aspect_scale&nbsp;=&nbsp;1,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">background_fill_alpha&nbsp;=&nbsp;{'value': 1.0},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">background_fill_color&nbsp;=&nbsp;{'value': '#ffffff'},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">below&nbsp;=&nbsp;[DatetimeAxis(id='0242039e-81d1-439d-b44b-289cb76b5b25', ...)],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">border_fill_alpha&nbsp;=&nbsp;{'value': 1.0},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">border_fill_color&nbsp;=&nbsp;{'value': '#ffffff'},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">css_classes&nbsp;=&nbsp;[],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">disabled&nbsp;=&nbsp;False,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">extra_x_ranges&nbsp;=&nbsp;{},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">extra_y_ranges&nbsp;=&nbsp;{},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">h_symmetry&nbsp;=&nbsp;True,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">height&nbsp;=&nbsp;None,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">hidpi&nbsp;=&nbsp;True,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">js_event_callbacks&nbsp;=&nbsp;{},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">js_property_callbacks&nbsp;=&nbsp;{},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">left&nbsp;=&nbsp;[LinearAxis(id='09c64d10-00b7-4610-91b9-792b3c7cc59d', ...)],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">lod_factor&nbsp;=&nbsp;10,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">lod_interval&nbsp;=&nbsp;300,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">lod_threshold&nbsp;=&nbsp;2000,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">lod_timeout&nbsp;=&nbsp;500,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">match_aspect&nbsp;=&nbsp;False,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">min_border&nbsp;=&nbsp;5,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">min_border_bottom&nbsp;=&nbsp;None,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">min_border_left&nbsp;=&nbsp;None,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">min_border_right&nbsp;=&nbsp;None,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">min_border_top&nbsp;=&nbsp;None,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">name&nbsp;=&nbsp;None,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">outline_line_alpha&nbsp;=&nbsp;{'value': 1.0},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">outline_line_cap&nbsp;=&nbsp;'butt',</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">outline_line_color&nbsp;=&nbsp;{'value': '#e5e5e5'},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">outline_line_dash&nbsp;=&nbsp;[],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">outline_line_dash_offset&nbsp;=&nbsp;0,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">outline_line_join&nbsp;=&nbsp;'miter',</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">outline_line_width&nbsp;=&nbsp;{'value': 1},</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">output_backend&nbsp;=&nbsp;'canvas',</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">plot_height&nbsp;=&nbsp;600,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">plot_width&nbsp;=&nbsp;1000,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">renderers&nbsp;=&nbsp;[DatetimeAxis(id='0242039e-81d1-439d-b44b-289cb76b5b25', ...), Grid(id='99a4d85a-6013-47f0-a03e-15be0d36671c', ...), LinearAxis(id='09c64d10-00b7-4610-91b9-792b3c7cc59d', ...), Grid(id='9caa8e8f-6818-47ee-a556-87e620988b0a', ...), BoxAnnotation(id='20355f01-387f-42ce-b5fe-cb7ff72828ca', ...), GlyphRenderer(id='ced07667-ddcc-4779-b001-be97c241d505', ...), Legend(id='a950e510-1721-4df7-b289-b4263d246908', ...), GlyphRenderer(id='14581b7b-707e-4bd5-95f9-547386972c43', ...), GlyphRenderer(id='5740c5c6-fc83-47c6-9803-2b257ec67950', ...), GlyphRenderer(id='7e0397e3-6027-4f64-8b95-3073abf7e992', ...), GlyphRenderer(id='7f82aa68-6d1f-48e3-ad69-53b37a33031b', ...), GlyphRenderer(id='fadf9c3d-9426-45a3-a271-a93c07ee4bbc', ...)],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">right&nbsp;=&nbsp;[],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">sizing_mode&nbsp;=&nbsp;'fixed',</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">subscribed_events&nbsp;=&nbsp;[],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">tags&nbsp;=&nbsp;[],</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">title&nbsp;=&nbsp;Title(id='8ec319f9-608c-4bcf-8ebe-0ab935716a57', ...),</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">title_location&nbsp;=&nbsp;'above',</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">toolbar&nbsp;=&nbsp;Toolbar(id='b8d8efab-6e6f-4915-b881-d767976a5f62', ...),</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">toolbar_location&nbsp;=&nbsp;'right',</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">toolbar_sticky&nbsp;=&nbsp;True,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">v_symmetry&nbsp;=&nbsp;False,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">width&nbsp;=&nbsp;None,</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">x_range&nbsp;=&nbsp;DataRange1d(id='ccc6b72b-4f0f-49fd-99ba-fd16f429805e', ...),</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">x_scale&nbsp;=&nbsp;LinearScale(id='d5d0640b-2639-43e5-87f4-61d3acc57866', ...),</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">y_range&nbsp;=&nbsp;DataRange1d(id='2aaed09c-9ab6-406d-9a92-1d11c0b834ea', ...),</div></div><div class="1c59fa47-37af-4bef-a267-6480a4b9e9fd" style="display: none;"><div style="display: table-cell;"></div><div style="display: table-cell;">y_scale&nbsp;=&nbsp;LinearScale(id='e34b5d4c-4494-404e-9799-e0ffac042e44', ...))</div></div></div>
-<script>
-(function() {
-  var expanded = false;
-  var ellipsis = document.getElementById("b56d0327-dd35-436c-b03a-222ed95aced8");
-  ellipsis.addEventListener("click", function() {
-    var rows = document.getElementsByClassName("1c59fa47-37af-4bef-a267-6480a4b9e9fd");
-    for (var i = 0; i < rows.length; i++) {
-      var el = rows[i];
-      el.style.display = expanded ? "none" : "table-row";
-    }
-    ellipsis.innerHTML = expanded ? "&hellip;)" : "&lsaquo;&lsaquo;&lsaquo;";
-    expanded = !expanded;
-  });
-})();
-</script>
-
-</div>
-
 </div>
 
 </div>
@@ -13568,7 +12920,7 @@ var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Agora além dos indicadores do gráfico OHLCV ainda temos uma media móvel, o desfio padrão o valor das bandas de boillinger e o cruzamento das mesmas. Observe que poluimos o dataframe com campos de data missing (NaN), esses pontos se encontram nos candles iniciais antes de existirem pontos suficientes para calcular as medias móveis</p>
+<p>Agora além dos indicadores do gráfico OHLCV ainda temos uma média móvel, o desfio padrão o valor das Bandas de Boillinger e o cruzamento das mesmas. Observe que poluimos o dataframe com campos de data missing (NaN) e esses pontos se encontram nos candles iniciais antes de existirem pontos suficientes para calcular as médias móveis.</p>
 
 </div>
 </div>
@@ -13577,7 +12929,7 @@ var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Adicionando-mais-indicadores">Adicionando mais indicadores<a class="anchor-link" href="#Adicionando-mais-indicadores">&#182;</a></h2><p>Agora que sabemos o que são indicadores e como implementa-los vamos ao modo mais fácil e adicionar mais alguns usando a biblioteca pyti</p>
+<h2 id="Adicionando-mais-indicadores">Adicionando mais indicadores<a class="anchor-link" href="#Adicionando-mais-indicadores">&#182;</a></h2><p>Agora que sabemos o que são indicadores e como implementa-los vamos ao modo mais fácil adicionando mais alguns usando a biblioteca pyti</p>
 
 </div>
 </div>
@@ -13627,8 +12979,8 @@ var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
 <li>#### Quantos indicadores são o suficiente?</li>
 <li>#### Quais os melhores indicadores?</li>
 <li>#### Indicadores realmente conseguem expressar bem a reação do mercado?</li>
-<li>#### Indicadores com base em analise natural são válidos?</li>
-<li>#### Pode-se usar a saída de um algorítmo de machine learning como um indicador para outro algorítmo?</li>
+<li>#### Indicadores com base em análise natural são válidos?</li>
+<li>#### Pode-se usar a saída de um algoritmo de machine learning como um indicador para outro algoritmo?</li>
 </ul>
 <h4 id="O-dataframe-resultante-&#233;-o-seguinte:">O dataframe resultante &#233; o seguinte:<a class="anchor-link" href="#O-dataframe-resultante-&#233;-o-seguinte:">&#182;</a></h4>
 </div>
@@ -13820,7 +13172,7 @@ var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="A-an&#225;lise-de-correla&#231;&#227;o">A an&#225;lise de correla&#231;&#227;o<a class="anchor-link" href="#A-an&#225;lise-de-correla&#231;&#227;o">&#182;</a></h3><p>Para verificar a correlação entre os indicadores pode-se criar uma matriz com os coeficientes de pearson utilizando o seaborn.</p>
 <p>Os coefieientes de pearson são úteis pois mostram a correlação entre duas séries temporais.</p>
-<p>Remove-se as colunas High, Low e Open para se observar mais facilmente a correlação entre as variáveis Close e os demais indicadores</p>
+<p>Remove-se as colunas High, Low e Open para se observar mais facilmente a correlação entre as variáveis Close e os demais indicadores.</p>
 
 </div>
 </div>
@@ -13904,7 +13256,7 @@ var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4-Prepare-the-data-to-better-spose-the-underlying-patterns-to-Machine-Learning-algorithms">4 Prepare the data to better spose the underlying patterns to Machine Learning algorithms<a class="anchor-link" href="#4-Prepare-the-data-to-better-spose-the-underlying-patterns-to-Machine-Learning-algorithms">&#182;</a></h2><p>Os algorítmos de machine Learning  precisam que os dados estejam preparados para sua execução, veremos melhor a diante. O primeiro passo é definir uma variável target, onde o algorítmo usará essa variável nos testes e treinos, também sera a variável que as predições são realizadas.</p>
+<h2 id="4-Prepare-the-data-to-better-spose-the-underlying-patterns-to-Machine-Learning-algorithms">4 Prepare the data to better spose the underlying patterns to Machine Learning algorithms<a class="anchor-link" href="#4-Prepare-the-data-to-better-spose-the-underlying-patterns-to-Machine-Learning-algorithms">&#182;</a></h2><p>Os algoritmos de machine learning  precisam que os dados estejam preparados para sua execução, veremos melhor a diante. O primeiro passo é definir uma variável target onde o algoritmo usará essa variável nos testes e treinos, também será a variável que as predições são realizadas.</p>
 
 </div>
 </div>
@@ -13913,15 +13265,15 @@ var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Criando-vari&#225;vel-target">Criando vari&#225;vel target<a class="anchor-link" href="#Criando-vari&#225;vel-target">&#182;</a></h3><p>Como os indicadores estão calculados o proximo passo é definir uma variável target para o algorítmo classificar.</p>
-<p>O método utilizado é look ahead descrito abaixo:</p>
+<h3 id="Criando-vari&#225;vel-target">Criando vari&#225;vel target<a class="anchor-link" href="#Criando-vari&#225;vel-target">&#182;</a></h3><p>Como os indicadores estão calculados o próximo passo é definir uma variável target para o algoritmo classificar.</p>
+<p>O método utilizado é look ahead, descrito abaixo:</p>
 
 <pre><code>    1 Para cada candle do dataframe
     2 Observe o close do candle atual e do candle atual + 10
-    2 se close &lt; close+10
-    3    pinte o candle de verde
-    4 senao pinte o candle de vermelho</code></pre>
-<p>Assim quando o preço subiu no futuro o candle atual ficara verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda, essa técnica é relativamente boa pra detectar vales e picos</p>
+    2 Se close &lt; close+10
+    3 pinte o candle de verde
+    4 Senão pinte o candle de vermelho</code></pre>
+<p>Assim quando o preço subiu no futuro o candle atual ficará verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda. Essa técnica é relativamente boa pra detectar vales e picos.</p>
 
 </div>
 </div>
@@ -14039,10 +13391,10 @@ var element = $('#6a5c7245-d5ec-4b90-b039-0b41d3213904');
 
 
 
-<div id="49322d60-600c-4d8d-a4f0-8a416e5e23d7"></div>
+<div id="4cced5a4-5343-4c00-9807-5294eb30b813"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#49322d60-600c-4d8d-a4f0-8a416e5e23d7');
+var element = $('#4cced5a4-5343-4c00-9807-5294eb30b813');
 
 (function(root) {
   function now() {
@@ -14337,10 +13689,10 @@ var element = $('#49322d60-600c-4d8d-a4f0-8a416e5e23d7');
 
 
 
-<div id="f6998340-3029-41aa-8225-31636bc96e69"></div>
+<div id="cb34ddbf-cb24-4a39-a51b-f7873a4e4c65"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#f6998340-3029-41aa-8225-31636bc96e69');
+var element = $('#cb34ddbf-cb24-4a39-a51b-f7873a4e4c65');
 (function(root) {
   function embed_document(root) {
     
@@ -14388,7 +13740,7 @@ var element = $('#f6998340-3029-41aa-8225-31636bc96e69');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Agora-que-percebemos-que-essa-estrat&#233;gia-de-defini&#231;&#227;o-do-target-&#233;-raso&#225;vel-adicionamos-ao-dataframe">Agora que percebemos que essa estrat&#233;gia de defini&#231;&#227;o do target &#233; raso&#225;vel adicionamos ao dataframe<a class="anchor-link" href="#Agora-que-percebemos-que-essa-estrat&#233;gia-de-defini&#231;&#227;o-do-target-&#233;-raso&#225;vel-adicionamos-ao-dataframe">&#182;</a></h3><p>Adiciona-se o target ao dataframe:</p>
+<h3 id="Agora-que-percebemos-que-essa-estrat&#233;gia-de-defini&#231;&#227;o-do-target-&#233;-razo&#225;vel-adicionamos-ao-dataframe">Agora que percebemos que essa estrat&#233;gia de defini&#231;&#227;o do target &#233; razo&#225;vel adicionamos ao dataframe<a class="anchor-link" href="#Agora-que-percebemos-que-essa-estrat&#233;gia-de-defini&#231;&#227;o-do-target-&#233;-razo&#225;vel-adicionamos-ao-dataframe">&#182;</a></h3><p>Adiciona-se o target ao dataframe:</p>
 <ul>
 <li>0- indica um ponto de compra (verde)</li>
 <li>1- indica um ponto de venda (vermelho)</li>
@@ -14445,8 +13797,8 @@ var element = $('#f6998340-3029-41aa-8225-31636bc96e69');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Teste-de-acerto-do-target">Teste de acerto do target<a class="anchor-link" href="#Teste-de-acerto-do-target">&#182;</a></h2><p>Esse método é muito simples e pode ter sua eficiência facilmente medida percorrendo cada target e verificando a mudança de sinal. e classificando o trade como vencedor ou perdedor.</p>
-<p>Se o preço na mudança de sinal de um trade de 0 para 1 o preço anterior for maior que o posterior o trade é vencedor, senão é perdedor (respeitando a lei da vida compre na baixa e venda na alta)</p>
+<h2 id="Teste-de-acerto-do-target">Teste de acerto do target<a class="anchor-link" href="#Teste-de-acerto-do-target">&#182;</a></h2><p>Esse método é muito simples e pode ter sua eficiência facilmente medida percorrendo cada target, verificando a mudança de sinal e classificando o trade como vencedor ou perdedor.</p>
+<p>Se o preço na mudança de sinal de um trade de 0 para 1 o preço anterior for maior que o posterior o trade é vencedor, senão é perdedor (respeitando a lei da vida: compre na baixa e venda na alta).</p>
 
 </div>
 </div>
@@ -14515,7 +13867,7 @@ var element = $('#f6998340-3029-41aa-8225-31636bc96e69');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Metricas-do-teste">Metricas do teste<a class="anchor-link" href="#Metricas-do-teste">&#182;</a></h4><p>Obs: Essas métricas de forma alguma avaliam com perfeição a estratégia, existem outros calculos mais complexos usados que não seram abordados aqui como drawndown, fator de risco e etc...</p>
+<h4 id="M&#233;tricas-do-teste">M&#233;tricas do teste<a class="anchor-link" href="#M&#233;tricas-do-teste">&#182;</a></h4><p>Obs: Essas métricas de forma alguma avaliam com perfeição a estratégia, existem outros c[alculos mais complexos usados que não seram abordados aqui como drawndown, fator de risco e etc...</p>
 
 </div>
 </div>
@@ -14560,8 +13912,8 @@ Porcentagem de erro: 0.15555555555555556
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="------------------------NOTA-IMPORTANTE-----------------">----------------------- NOTA IMPORTANTE-----------------<a class="anchor-link" href="#------------------------NOTA-IMPORTANTE-----------------">&#182;</a></h3><p>Essa taxa de acerto de  70%,  significa que nosso bot vai alcançar essa taxa de acerto mesmo que consigamos criar modelos de machine learning com 100% de precisão, pois os modelos são criados para prever os sinais de compra e venda. 
-A solução para esse problema seria usar uma técnica de otimização que encontre os picos e vales do gráfico para que assim aumente a qualidade do nosso dataset conseguentemente diminuindo esse gargalo e melhorando o resultado final dos algorítmos. 
+<h3 id="------------------------NOTA-IMPORTANTE-----------------">----------------------- NOTA IMPORTANTE-----------------<a class="anchor-link" href="#------------------------NOTA-IMPORTANTE-----------------">&#182;</a></h3><p>Essa taxa de acerto de  70%  significa que nosso bot vai alcançar essa taxa de acerto mesmo que consigamos criar modelos de machine learning com 100% de precisão, pois os modelos são criados para prever os sinais de compra e venda. 
+A solução para esse problema seria usar uma técnica de otimização que encontre os picos e vales do gráfico para que assim aumente a qualidade do nosso dataset, consequentemente diminuindo esse gargalo e melhorando o resultado final dos algoritmos. 
 Ou seja no final para estimar o desempenho é necessário considerar esse erro e propaga-lo.</p>
 
 </div>
@@ -14571,8 +13923,8 @@ Ou seja no final para estimar o desempenho é necessário considerar esse erro e
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Limpeza-dos-dados">Limpeza dos dados<a class="anchor-link" href="#Limpeza-dos-dados">&#182;</a></h3><p>Para treinar os algorítmos são necessárias ações em relação a limpeza dos dados, para isso remove-se as colunas buy e sell que não são mais necessárias e remove-se também todas as colunas NaN (data missing).
-Também realiza-se um backup do dataset como csv</p>
+<h3 id="Limpeza-dos-dados">Limpeza dos dados<a class="anchor-link" href="#Limpeza-dos-dados">&#182;</a></h3><p>Para treinar os algoritmos são necessárias ações em relação a limpeza dos dados, para isso remove-se as colunas buy e sell que não são mais necessárias e remove-se também todas as colunas NaN (data missing).
+Também realiza-se um backup do dataset como csv.</p>
 
 </div>
 </div>
@@ -14812,8 +14164,8 @@ Também realiza-se um backup do dataset como csv</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Para a execução e validação dos algorítmos divide-se o dataset em treino e teste, onde 80% no caso é usado para treino e os outros 20% para testes.</p>
-<p>Nesse passo também deve-se realizar a feature selection, que serão os inputs do seu algorítmo (nesse caso não se aplicou nenhuma técnica, somente a remoção da feature Data)</p>
+<p>Para a execução e validação dos algoritmos divide-se o dataset em treino e teste, onde 80% no caso é usado para treino e os outros 20% para testes.</p>
+<p>Nesse passo também deve-se realizar a feature selection, que serão os inputs do seu algoritmo (nesse caso não se aplicou nenhuma técnica, somente a remoção da feature Data).</p>
 <p>Também modela a entrada e saída dos algorítmos mapeando a equação.</p>
 
 </div>
@@ -14859,7 +14211,7 @@ Também realiza-se um backup do dataset como csv</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A parte mais custosa do processo já se encerrou, agora entra a parte mais divertida onde testamos os algorítmos de classificação para verificar quem da o melhor resultado no nosso problema</p>
+<p>A parte mais custosa do processo já se encerrou, agora entra a parte mais divertida onde testamos os algoritmos de classificação para verificar quem dá o melhor resultado no nosso problema.</p>
 <h4 id="Primeiro-cria-se-um-modelo-simples-de-decision-tree,-vejamos:">Primeiro cria-se um modelo simples de decision tree, vejamos:<a class="anchor-link" href="#Primeiro-cria-se-um-modelo-simples-de-decision-tree,-vejamos:">&#182;</a></h4><p>1 Criar a decision tree</p>
 
 </div>
@@ -14885,7 +14237,7 @@ Também realiza-se um backup do dataset como csv</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>2 É bem legal visualizar a arvore resultante:</p>
+<p>2 É bem legal visualizar a árvore resultante:</p>
 
 </div>
 </div>
@@ -14965,7 +14317,7 @@ Wall time: 655 ms
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Para ver o desempenho do algorítmo primeiro testa-se previsões com o dataset de test e em seguida calcula-se o acerto</p>
+<p>Para ver o desempenho do algoritmo primeiro testa-se previsões com o dataset de test e em seguida calcula-se o acerto.</p>
 
 </div>
 </div>
@@ -15012,8 +14364,8 @@ Wall time: 655 ms
 <h4 id="Problemas">Problemas<a class="anchor-link" href="#Problemas">&#182;</a></h4><p>Nesse teste obtemos 67% de acerto, que pode ser facilmente melhorado pois cometemos alguns erros nesse teste:</p>
 <ul>
 <li>1 Os dados não estavam normalizados</li>
-<li>2 Árvores de decisão tem um grande numero de impuresas e não sao a melhor opção para a aplicação</li>
-<li>3 Rodamos o algorítmo com todos os hyperparámetros e features default</li>
+<li>2 Árvores de decisão tem um grande número de impurezas e não são a melhor opção para a aplicação</li>
+<li>3 Rodamos o algoritmo com todos os hyperparametros e features default</li>
 <li>4 O método de teste usado não é confiável </li>
 </ul>
 
@@ -15025,9 +14377,9 @@ Wall time: 655 ms
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Solu&#231;&#245;es-para-os-problemas">Solu&#231;&#245;es para os problemas<a class="anchor-link" href="#Solu&#231;&#245;es-para-os-problemas">&#182;</a></h4><ul>
-<li>1 Normalizar os dados na mesma escala, o scklearn tem algumas tecnicas de normalização como StandardScaler e MinMaxScaler</li>
-<li>2 Testar algorítmos mais elaborados, existem muitos a disposição como Random Forest e Gradient Boosting</li>
-<li>3 Otimizar hiperparámetros com técnicas como por exemplo GradientSearch e Bagging </li>
+<li>1 Normalizar os dados na mesma escala, o scklearn tem algumas técnicas de normalização como StandardScaler e MinMaxScaler</li>
+<li>2 Testar algoritmos mais elaborados, existem muitos a disposição como Random Forest e Gradient Boosting</li>
+<li>3 Otimizar hiperparametros com técnicas como por exemplo GradientSearch e Bagging </li>
 <li>4 Testar com K-fold</li>
 </ul>
 
@@ -15038,7 +14390,7 @@ Wall time: 655 ms
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Pipelines">Pipelines<a class="anchor-link" href="#Pipelines">&#182;</a></h1><p>Para corrigir alguns erros e testar mais algorítmos com menos exforço usamos pipelines onde se encapsula os algorítmos para que possam facilmente ser treinados com maior facilidade</p>
+<h1 id="Pipelines">Pipelines<a class="anchor-link" href="#Pipelines">&#182;</a></h1><p>Para corrigir alguns erros e testar mais algoritmos com menos exforço usamos pipelines onde se encapsula os algoritmos para que possam ser treinados com maior facilidade.</p>
 
 </div>
 </div>
@@ -15047,7 +14399,7 @@ Wall time: 655 ms
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Criando-pipelines-para-teste-dos-modelos">Criando pipelines para teste dos modelos<a class="anchor-link" href="#Criando-pipelines-para-teste-dos-modelos">&#182;</a></h3><h4 id="Crio-4-pipelines-e-verifico-a-accuracia-de-todos-com-cross-validation-com-5-dobras-utilizando-diferentes-combina&#231;&#245;es-de-scallers">Crio 4 pipelines e verifico a accuracia de todos com cross validation com 5 dobras utilizando diferentes combina&#231;&#245;es de scallers<a class="anchor-link" href="#Crio-4-pipelines-e-verifico-a-accuracia-de-todos-com-cross-validation-com-5-dobras-utilizando-diferentes-combina&#231;&#245;es-de-scallers">&#182;</a></h4><ul>
+<h3 id="Criando-pipelines-para-teste-dos-modelos">Criando pipelines para teste dos modelos<a class="anchor-link" href="#Criando-pipelines-para-teste-dos-modelos">&#182;</a></h3><h4 id="Crio-4-pipelines-e-verifico-a-acur&#225;cia-de-todos-com-cross-validation-com-5-dobras-utilizando-diferentes-combina&#231;&#245;es-de-scallers">Crio 4 pipelines e verifico a acur&#225;cia de todos com cross validation com 5 dobras utilizando diferentes combina&#231;&#245;es de scallers<a class="anchor-link" href="#Crio-4-pipelines-e-verifico-a-acur&#225;cia-de-todos-com-cross-validation-com-5-dobras-utilizando-diferentes-combina&#231;&#245;es-de-scallers">&#182;</a></h4><ul>
 <li>pipeline 1 random forest com standart scaller</li>
 <li>pipeline 2 random forest com minmaxacaller</li>
 <li>pipeline 3 suport vector machines com minmaxscaller</li>
@@ -15253,7 +14605,7 @@ Wall time: 655 ms
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Como-esperado">Como esperado<a class="anchor-link" href="#Como-esperado">&#182;</a></h3><p>Os modelos com melhor resultado foram BaggingClassifier(RandomForestClassifier()) onde combinamos RandomForest com a tecnica de Bagging, e o algorítmo GradientBoostingClassifier() que já possui um ótimo historico e vence muitas competições no Kaggle.</p>
+<h3 id="Como-esperado">Como esperado<a class="anchor-link" href="#Como-esperado">&#182;</a></h3><p>Os modelos com melhor resultado foram BaggingClassifier(RandomForestClassifier()) onde combinamos RandomForest com a técnica de Bagging e o algoritmo GradientBoostingClassifier(), que já possui um ótimo histórico e vence muitas competições no Kaggle.</p>
 
 </div>
 </div>
@@ -15263,7 +14615,7 @@ Wall time: 655 ms
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Automatizando-testes">Automatizando testes<a class="anchor-link" href="#Automatizando-testes">&#182;</a></h2><p>Pipelines são facilmente automatizadas pois podemos criar as pipelines para nosso modelo e em seguida paralelizar o processamento por meio de threads.</p>
-<p>Abaixo cria-se 10 pipelines com combinações diferentes de algorítmos</p>
+<p>Abaixo cria-se 10 pipelines com combinações diferentes de algoritmos.</p>
 
 </div>
 </div>
@@ -15343,7 +14695,7 @@ Wall time: 655 ms
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Pool-de-threads">Pool de threads<a class="anchor-link" href="#Pool-de-threads">&#182;</a></h3><p>Cria-se então uma pool de threads onde cada thread executara um pipeline e testara seu modelo, abaixo os resultados:</p>
+<h3 id="Pool-de-threads">Pool de threads<a class="anchor-link" href="#Pool-de-threads">&#182;</a></h3><p>Cria-se então uma pool de threads onde cada thread executará um pipeline e testará seu modelo. Abaixo os resultados:</p>
 
 </div>
 </div>
@@ -15641,7 +14993,7 @@ Name: alg, dtype: object</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="6-fine-tune-your-models-and-combine-them-into-a-great-solution">6 fine tune your models and combine them into a great solution<a class="anchor-link" href="#6-fine-tune-your-models-and-combine-them-into-a-great-solution">&#182;</a></h2><p>Desafio, nessa parte retorne a seleção das features, target e utilize metodos como gridsearch para encontrar a melhor combinação de parâmetros</p>
+<h2 id="6-fine-tune-your-models-and-combine-them-into-a-great-solution">6 fine tune your models and combine them into a great solution<a class="anchor-link" href="#6-fine-tune-your-models-and-combine-them-into-a-great-solution">&#182;</a></h2><p>Desafio, nessa parte retorne a seleção das features, target e utilize métodos como gridsearch para encontrar a melhor combinação de parâmetros.</p>
 
 </div>
 </div>
@@ -15890,7 +15242,7 @@ Wall time: 44.7 s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="7-Present--a-solution--&gt;-proximo-arquivo">7 Present  a solution -&gt; proximo arquivo<a class="anchor-link" href="#7-Present--a-solution--&gt;-proximo-arquivo">&#182;</a></h1>
+<h1 id="7-Present--a-solution--&gt;-pr&#243;ximo-arquivo">7 Present  a solution -&gt; pr&#243;ximo arquivo<a class="anchor-link" href="#7-Present--a-solution--&gt;-pr&#243;ximo-arquivo">&#182;</a></h1>
 </div>
 </div>
 </div>
