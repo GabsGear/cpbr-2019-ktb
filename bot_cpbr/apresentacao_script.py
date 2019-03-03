@@ -128,15 +128,12 @@ dataframe.shape
 
 # Então plota-se com o bokeh os candles com um stock chart no formato OHLCV
 
-# In[6]:
+# In[4]:
 
 
 plot = candles.plot_candles()
 show(plot)
 
-
-# ![\images\candles.png](attachment:candles.png)
-# 
 
 # ### Interpretando um candle:
 # 
@@ -188,7 +185,7 @@ show(plot)
 # 
 # ***Vamos a implementação:*** 
 
-# In[7]:
+# In[5]:
 
 
 class Bbands(Aquisition):  
@@ -250,7 +247,7 @@ class Bbands(Aquisition):
 # 
 # Pode-se visualizar as bandas calculadas para uma melhor interpretação
 
-# In[2]:
+# In[6]:
 
 
 bands = Bbands()
@@ -259,13 +256,11 @@ plot = bands.plot_bands()
 show(plot)
 
 
-# ![\images\Screenshot%20from%202019-01-19%2017-12-33.png](attachment:Screenshot%20from%202019-01-19%2017-12-33.png)
-
 # #  Cross
 # 
 # Outro ponto importante é a possibilidade de adicionar uma interpretação das bandas extraindo mais um sinal delas. São os pontos de cruzamento da linha do fechamento (close) com as bandas superiores e inferiores. 
 
-# In[1]:
+# In[7]:
 
 
 bands.plot_cross_points()
@@ -275,7 +270,7 @@ bands.plot_cross_points()
 
 # Adicionando todos esse indicadores nosso dataframe fica o seguinte:
 
-# In[11]:
+# In[8]:
 
 
 bands.detect_cross()
@@ -290,7 +285,7 @@ bands.df.head()
 # 
 # 
 
-# In[12]:
+# In[9]:
 
 
 from pyti.exponential_moving_average import exponential_moving_average as ema
@@ -330,7 +325,7 @@ class Indicators():
 # 
 # #### O dataframe resultante é o seguinte:
 
-# In[13]:
+# In[10]:
 
 
 idc = Indicators(bands.df)
@@ -346,7 +341,7 @@ df.head()
 # 
 # Remove-se as colunas High, Low e Open para se observar mais facilmente a correlação entre as variáveis Close e os demais indicadores.
 
-# In[14]:
+# In[11]:
 
 
 import matplotlib.pyplot as plt
@@ -369,7 +364,7 @@ class Corr(object):
         plt.show()
 
 
-# In[15]:
+# In[12]:
 
 
 c = Corr(df)
@@ -398,36 +393,25 @@ c.pearson()
 # 
 # Assim quando o preço subiu no futuro o candle atual ficará verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda. Essa técnica é relativamente boa pra detectar vales e picos.
 
-# In[16]:
+# In[62]:
 
 
 class Target(object):
     def __init__(self, candles):
         self.candles = candles
-        self.buy = [] 
-        self.sell = []
-        self.hold = []
         self.close = self.candles['Close'].tolist() 
         
         
-    def fill(self, vBuy, vSell):
-        self.buy.append(vBuy) 
-        self.sell.append(vSell)
-        
     def test_target(self, shift):
-        for i in range (0, len(self.close)-(shift+1)):
-            if float(self.close[i]) < float(self.close[i+shift]):
-                self.fill(self.close[i], 'NaN')
-            elif float(self.close[i]) > float(self.close[i+shift]):
-                self.fill('NaN', self.close[i])
-        
-        if (len(self.buy) != len(self.candles['Close'])):
-            len_diff = (len(self.buy) - len(self.candles['Close']))
-            for i in range (len(self.candles.Close)+len_diff, len(self.candles.Close)):
-                self.fill('NaN', 'NaN')
-                
-        self.candles['buy'] = self.buy
-        self.candles['sell'] = self.sell
+        df['buy'] = df.Close[(df.Close.shift(1) > df.Close) & (df.Close.shift(-1) > df.Close)]
+        df['sell'] = df.Close[(df.Close.shift(1) < df.Close) & (df.Close.shift(-1) < df.Close)]
+        hold = []
+        for idx, value in enumerate(df['Close']):
+            if (np.isnan(df['min'][idx]) and np.isnan(df['max'][idx])): #and (df['max'][idx] == np.nan):
+                hold.append(value)
+            else:
+                hold.append(np.nan)
+        df['hold'] = hold
         
     def plot_targets(self):   
         TOOLS = "pan,wheel_zoom,box_zoom,reset,save"
@@ -439,16 +423,24 @@ class Target(object):
 
         p.circle(self.candles.date, self.candles['sell'], size=5, color="red", alpha=1, legend='buy')
         p.circle(self.candles.date, self.candles['buy'], size=5, color="green", alpha=1, legend='sell')
+        p.circle(self.candles.date, self.candles['hold'], size=5, color="blue", alpha=1, legend='sell')
+
 
         output_notebook()
         return p
+
+
+# In[63]:
+
+
+df.head()
 
 
 # ### Visualização do target
 
 # O resultado gráfico do look ahead pode ser observado abaixo:
 
-# In[18]:
+# In[64]:
 
 
 tgt = Target(df)
@@ -456,8 +448,6 @@ tgt.test_target(5)
 plot = tgt.plot_targets()
 show(plot)
 
-
-# ![Screenshot%20from%202019-01-19%2017-52-34.png](attachment:Screenshot%20from%202019-01-19%2017-52-34.png)
 
 # ### Agora que percebemos que essa estratégia de definição do target é razoável adicionamos ao dataframe
 # 
