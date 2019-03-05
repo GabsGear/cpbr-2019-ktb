@@ -17,11 +17,7 @@
 # 
 # Existem inúmeras opções de algoritmos e técnicas para aplicar algoritmos de Machine Learning para trade. Pode-se usar técnicas de predição com redes neurais (LSTM OU CNN) ou usar aprendizado por reforço, mas nesse caso vamos modelar para utilizar um algoritmo de classificação.
 
-# ### 2 Get The data
-# 
-# A aquisição dos dados é feita através do wrapper para a REST API da Binance. Os dados são basicamente o preço do ativo no formato OHLCV (Open, High, Low, Close e Volume), em seguida se faz o parse para um dataframe do Pandas.
-
-# In[1]:
+# In[8]:
 
 
 import requests, json
@@ -35,7 +31,7 @@ from datetime import datetime
 
 from math import pi
 import bokeh
-bokeh.sampledata.download()
+#bokeh.sampledata.download()
 from bokeh.plotting import figure, show, output_file, output_notebook
 from bokeh.sampledata.stocks import MSFT
 
@@ -76,8 +72,8 @@ class Aquisition(object):
         self.cast_to_dataframe(opentime, lopen, lhigh, llow, lclose, lvol, closetime)
         
     def get_candles(self):
-        #candles = self.client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1HOUR, "1 Ago, 2018")
-        candles = self.client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1DAY)
+        candles = self.client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1HOUR, "1 Ago, 2018")
+        #candles = self.client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1DAY)
         self.parse(candles)
         return self.df
     
@@ -108,7 +104,7 @@ class Aquisition(object):
 
 # O dataframe resultante pode ser visto abaixo:
 
-# In[2]:
+# In[9]:
 
 
 candles = Aquisition()
@@ -120,7 +116,7 @@ dataframe.head()
 # 
 # Agora é necessário ter um entendimento melhor do problema, então em seguida faremos algumas análises em nossos dados para tentar obter algum insight  interessante.
 
-# In[3]:
+# In[10]:
 
 
 dataframe.shape
@@ -128,64 +124,14 @@ dataframe.shape
 
 # Então plota-se com o bokeh os candles com um stock chart no formato OHLCV
 
-# In[4]:
+# In[12]:
 
 
 plot = candles.plot_candles()
 show(plot)
 
 
-# ### Interpretando um candle:
-# 
-# #### Os 3 elementos dos Candlesticks
-# 
-# #### 1. Período
-# 
-# O principal conceito dos candlesticks é que cada candle representa o que ocorreu com o preço de uma ação durante um determinado período de tempo. Cada candle pode representar 1 minuto, 5 minutos, 1 hora, 1 semana, 1 mês e até mesmo 1 ano. Você é que escolhe.
-# 
-# #### 2. Formato
-# O formato do candle por sua vez é determinado por importantes valores que o preço da ação atingiu durante este determinado período. São os preço de:
-# 
-# +abertura
-# +fechamento
-# +mínimo
-# +máximo
-# 
-# Estes valores dão forma aos dois elementos que compõem um Candle:
-# 
-# o corpo (que traz as informações de fechamento e abertura), e
-# a sombra (que informa os máximos e mínimos do período).
-# 
-# #### 3. Cor
-# O terceiro elemento que compõem um candlestick é a sua cor, isso determina se o candlestick é de alta ou de baixa.
-# 
-# Quando o preço de fechamento está abaixo do preço de abertura, significa que o preço da ação caiu durante aquele determinado período e o Candle será de baixa.
-# 
-# Quando o preço de fechamento for maior que o preço de abertura, significa que o preço subiu durante aquele período e o candlestick será de alta.
-# 
-# Veja na figura abaixo como interpretar cada um dos três elementos do candlestick:
-# 
-# ![\images\explain_candle.png](attachment:explain_candle.png)
-
-# ### Somente Candles não são o suficiente
-# 
-# Infelizmente apesar dos candles nos dizerem muito sobre o ativo, ainda não são dados suficientes para rodar nos algoritmos. Para isso calculam-se alguns indicadores de mercado. Indicadores de mercado são métodos práticos para obter estimativas sobre o valor da empresa, então são amplamente utilizados por traders para a comparação entre ações facilitando, ou não, na tomada de decisão.
-
-# ### Calculando indicadores
-# 
-# 
-# 
-# Existem muitos indicadores famosos e a maioria é explicita por fórmulas matemáticas com base em estatística. Um exemplo são as famosas Bandas de Boillinger.
-# 
-# Análise de Bollinger (também conhecida como Bandas de Bollinger) são ferramentas de análise técnica criadas por John Bollinger no início dos anos 80. Este indicador possui uma forte relação com a volatilidade, possibilitando, assim, a sua comparação com os níveis de preços num determinado período de tempo. O maior objetivo das bandas Bollinger é fornecer uma ideia relativa de alto e baixo. Por definição, os preços são altos na linha (banda) superior e baixos na linha (banda) inferior.
-# 
-# O indicador é calculado pela seguinte fórmula: 
-# 
-# ![\images\bbands.png](attachment:bbands.png)
-# 
-# ***Vamos a implementação:*** 
-
-# In[5]:
+# In[13]:
 
 
 class Bbands(Aquisition):  
@@ -247,7 +193,7 @@ class Bbands(Aquisition):
 # 
 # Pode-se visualizar as bandas calculadas para uma melhor interpretação
 
-# In[6]:
+# In[16]:
 
 
 bands = Bbands()
@@ -260,17 +206,15 @@ show(plot)
 # 
 # Outro ponto importante é a possibilidade de adicionar uma interpretação das bandas extraindo mais um sinal delas. São os pontos de cruzamento da linha do fechamento (close) com as bandas superiores e inferiores. 
 
-# In[7]:
+# In[17]:
 
 
 bands.plot_cross_points()
 
 
-# ![\images\Screenshot%20from%202019-01-19%2017-19-22.png](attachment:Screenshot%20from%202019-01-19%2017-19-22.png)
-
 # Adicionando todos esse indicadores nosso dataframe fica o seguinte:
 
-# In[8]:
+# In[18]:
 
 
 bands.detect_cross()
@@ -285,7 +229,7 @@ bands.df.head()
 # 
 # 
 
-# In[9]:
+# In[19]:
 
 
 from pyti.exponential_moving_average import exponential_moving_average as ema
@@ -325,7 +269,7 @@ class Indicators():
 # 
 # #### O dataframe resultante é o seguinte:
 
-# In[10]:
+# In[21]:
 
 
 idc = Indicators(bands.df)
@@ -333,6 +277,8 @@ df = idc.add_indicators()
 df.head()
 
 
+# 
+# 
 # ### A análise de correlação
 # 
 # Para verificar a correlação entre os indicadores pode-se criar uma matriz com os coeficientes de pearson utilizando o seaborn.
@@ -341,7 +287,7 @@ df.head()
 # 
 # Remove-se as colunas High, Low e Open para se observar mais facilmente a correlação entre as variáveis Close e os demais indicadores.
 
-# In[11]:
+# In[22]:
 
 
 import matplotlib.pyplot as plt
@@ -364,7 +310,7 @@ class Corr(object):
         plt.show()
 
 
-# In[12]:
+# In[23]:
 
 
 c = Corr(df)
@@ -393,7 +339,7 @@ c.pearson()
 # 
 # Assim quando o preço subiu no futuro o candle atual ficará verde indicando um ponto de compra e ao contrário ficará vermelho indicando venda. Essa técnica é relativamente boa pra detectar vales e picos.
 
-# In[62]:
+# In[29]:
 
 
 class Target(object):
@@ -407,7 +353,7 @@ class Target(object):
         df['sell'] = df.Close[(df.Close.shift(1) < df.Close) & (df.Close.shift(-1) < df.Close)]
         hold = []
         for idx, value in enumerate(df['Close']):
-            if (np.isnan(df['min'][idx]) and np.isnan(df['max'][idx])): #and (df['max'][idx] == np.nan):
+            if (np.isnan(df['buy'][idx]) and np.isnan(df['sell'][idx])): #and (df['max'][idx] == np.nan):
                 hold.append(value)
             else:
                 hold.append(np.nan)
@@ -423,30 +369,28 @@ class Target(object):
 
         p.circle(self.candles.date, self.candles['sell'], size=5, color="red", alpha=1, legend='buy')
         p.circle(self.candles.date, self.candles['buy'], size=5, color="green", alpha=1, legend='sell')
-        p.circle(self.candles.date, self.candles['hold'], size=5, color="blue", alpha=1, legend='sell')
-
-
+        p.circle(self.candles.date, self.candles['hold'], size=2, color="blue", alpha=1, legend='hold')
         output_notebook()
         return p
-
-
-# In[63]:
-
-
-df.head()
 
 
 # ### Visualização do target
 
 # O resultado gráfico do look ahead pode ser observado abaixo:
 
-# In[64]:
+# In[31]:
 
 
 tgt = Target(df)
 tgt.test_target(5)
 plot = tgt.plot_targets()
 show(plot)
+
+
+# In[41]:
+
+
+tgt.candles
 
 
 # ### Agora que percebemos que essa estratégia de definição do target é razoável adicionamos ao dataframe
@@ -456,34 +400,27 @@ show(plot)
 # + 0- indica um ponto de compra (verde)
 # + 1- indica um ponto de venda (vermelho)
 
-# In[19]:
+# In[71]:
 
 
-def createTarget(candles, shift):
-    
-    close = candles['Close'].tolist()
+def createTarget(candles):
+    df = candles.fillna(0)
     target = []
-    
-    for i in range (0, len(close)-(shift+1)):
-        if float(close[i]) < float(close[i+shift]):
+    for idx in range(len(df['buy'])):
+        if (df['buy'][idx] > 0):
             target.append(0)
-
-        elif float(close[i]) > float(close[i+shift]):
+        if (df['sell'][idx] > 0):
             target.append(1)
-            
-    if (len(candles.buy) != len(target)):
-        len_diff = (len(candles.buy) - len(target))
-        for i in range (len(candles.Close), len(candles.Close)+ len_diff):
-            target.append('NaN')
-        
-    candles['target'] = target
+        if (df['hold'][idx] > 0):
+            target.append(2)
+    return target
 
 
-# In[20]:
+# In[73]:
 
 
-targ = tgt.candles
-createTarget(targ, 5)
+candles = tgt.candles
+candles['target'] = createTarget(candles)
 
 
 # ## Teste de acerto do target
@@ -492,7 +429,7 @@ createTarget(targ, 5)
 # 
 # Se o preço na mudança de sinal de um trade de 0 para 1 o preço anterior for maior que o posterior o trade é vencedor, senão é perdedor (respeitando a lei da vida: compre na baixa e venda na alta).
 
-# In[21]:
+# In[85]:
 
 
 class TestTarget():
@@ -508,10 +445,16 @@ class TestTarget():
         self.total_trades = 0
         
     def test(self):
-        for candle in range (0, len(self.candles)):
-            if(self.candles['target'][candle] == self.candles['target'][self.last_index]):
+        for candle in range (len(self.candles)):
+            if(self.candles['target'][candle] == self.candles['target'][self.last_index]): #compara os atuais
                 pass
                   
+            elif (self.candles['target'][candle] == 2 and self.candles['target'][self.last_index] == 1):
+                pass
+            
+            elif (self.candles['target'][candle] == 2 and self.candles['target'][self.last_index] == 0):
+                pass
+                
             elif (self.candles['target'][candle] == 0 and self.candles['target'][self.last_index] == 1):
                 self.last_index = candle
                 self.last_buy = self.candles['Close'][candle]
@@ -531,7 +474,7 @@ class TestTarget():
         
 
 
-# In[22]:
+# In[88]:
 
 
 test = TestTarget(tgt.candles)
@@ -542,19 +485,13 @@ test.test()
 # 
 # Obs: Essas métricas de forma alguma avaliam com perfeição a estratégia, existem outros c[alculos mais complexos usados que não seram abordados aqui como drawndown, fator de risco e etc...
 
-# In[23]:
+# In[89]:
 
 
 test.eval_metrics()
 print('Numero de acertos: {} \nNumero de erros: {} \nPorcentagem de acerto: {} \nPorcentagem de erro: {}'
       .format(test.winner, test.loser, test.win_percent, test.loss_percent) )
 
-
-# ### ----------------------- NOTA IMPORTANTE-----------------
-# 
-# Essa taxa de acerto de  70%  significa que nosso bot vai alcançar essa taxa de acerto mesmo que consigamos criar modelos de machine learning com 100% de precisão, pois os modelos são criados para prever os sinais de compra e venda. 
-# A solução para esse problema seria usar uma técnica de otimização que encontre os picos e vales do gráfico para que assim aumente a qualidade do nosso dataset, consequentemente diminuindo esse gargalo e melhorando o resultado final dos algoritmos. 
-# Ou seja no final para estimar o desempenho é necessário considerar esse erro e propaga-lo.
 
 # ### Limpeza dos dados
 # 
